@@ -27,11 +27,16 @@ vim.g.maplocalleader = " "
 keymap("n", "<leader>e", ":call ToggleNetrw()<cr>", opts)
 -- keymap("n", "<leader>e", ":Fern .<cr>", opts)
 
+-- Splits
+keymap("n", "<leader>d", ":vsp<cr>", opts)
 
 -- Tabs
 keymap("n", "<leader>t", ":tabnew<cr>", opts)
 keymap("n", "<leader>l", ":tabn<cr>", opts)
 keymap("n", "<leader>h", ":tabp<cr>", opts)
+
+-- Terminals
+keymap("n", "<leader>b", ":new|:term<cr>", opts)
 
 -- Saving/Exiting
 keymap("n", "<leader>w", ":wa<cr>", opts)

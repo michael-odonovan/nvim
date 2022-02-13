@@ -1,3 +1,5 @@
+-- gd = go to
+
 require "user.lsp"
 
 require "user.aaa-old-config"

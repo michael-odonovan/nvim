@@ -142,9 +142,6 @@ augroup END
 " => Terminals =>  {{{
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Opening bottom terminal for git work:
-nnoremap <leader>b :new<bar>:term<CR>
-
 " Straight into insert mode
 autocmd TermOpen * startinsert
 

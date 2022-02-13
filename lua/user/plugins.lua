@@ -44,6 +44,13 @@ return packer.startup(function(use)
   -- colorscheme
   use "EdenEast/nightfox.nvim"
 
+  -- better global search and replace
+  use 'jremmen/vim-ripgrep'
+  use 'stefandtw/quickfix-reflector.vim'
+
+  -- file explorer
+  use 'kyazdani42/nvim-tree.lua'
+
   -- general
   use "lambdalisue/fern.vim"
   use "goolord/alpha-nvim" -- lua version of vim startify
