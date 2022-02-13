@@ -6,6 +6,7 @@ require "user.aaa-old-config"
 require "user.autocommands"
 require "user.keymaps"
 require "user.options"
+
 -- Loading the plugins
 require "user.plugins"
 
@@ -22,5 +23,4 @@ require "user.plugin-settings.toggleterm"
 require "user.plugin-settings.project"
 require "user.plugin-settings.impatient"
 require "user.plugin-settings.indentline"
-require "user.plugin-settings.alpha"
 
