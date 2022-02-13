@@ -48,14 +48,6 @@ return packer.startup(function(use)
   use 'jremmen/vim-ripgrep'
   use 'stefandtw/quickfix-reflector.vim'
 
-  -- file explorer
-  use "kyazdani42/nvim-web-devicons" -- add icons from Nerd fonts to nvim
-  use {
-      'kyazdani42/nvim-tree.lua',
-      requires = {
-        'kyazdani42/nvim-web-devicons', -- optional, for file icon
-      },
-  }
   -- general
   use "lambdalisue/fern.vim"
   use "goolord/alpha-nvim" -- lua version of vim startify
