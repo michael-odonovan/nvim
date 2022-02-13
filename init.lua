@@ -23,4 +23,5 @@ require "user.plugin-settings.toggleterm"
 require "user.plugin-settings.project"
 require "user.plugin-settings.impatient"
 require "user.plugin-settings.indentline"
+require "user.plugin-settings.nvim-tree"
 

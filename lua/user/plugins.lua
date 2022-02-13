@@ -49,12 +49,12 @@ return packer.startup(function(use)
   use 'stefandtw/quickfix-reflector.vim'
 
   -- file explorer
+  use "kyazdani42/nvim-web-devicons" -- add icons from Nerd fonts to nvim
   use {
       'kyazdani42/nvim-tree.lua',
       requires = {
         'kyazdani42/nvim-web-devicons', -- optional, for file icon
       },
-      config = function() require'nvim-tree'.setup {} end
   }
   -- general
   use "lambdalisue/fern.vim"
@@ -66,7 +66,6 @@ return packer.startup(function(use)
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used by lots of plugins
   use "tpope/vim-commentary" -- Easily comment stuff
-  use "kyazdani42/nvim-web-devicons" -- add icons from Nerd fonts to nvim
   use "moll/vim-bbye" -- about deleting buffers ???
   use "tpope/vim-surround" -- surround text with tags etc.
   use "tpope/vim-repeat" -- makes it able to to repeat vim-surround functions

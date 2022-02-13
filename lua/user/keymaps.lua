@@ -23,8 +23,8 @@ vim.g.maplocalleader = " "
 -- Normal Mode -----------------------------------------
 
 -- Open File Explorer
--- keymap("n", "<leader>e", ":call ToggleNetrw()<cr>", opts)
-keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
+keymap("n", "<leader>e", ":call ToggleNetrw()<cr>", opts)
+keymap("n", "<leader>E", ":NvimTreeToggle<cr>", opts)
 
 -- Splits
 keymap("n", "<leader>d", ":vsp<cr>", opts)
