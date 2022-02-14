@@ -117,18 +117,6 @@ augroup END
 
 " }}}
 
-" => Splits =>  {{{
-"""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" Keep equal Vim split on resizing
-autocmd VimResized * wincmd =
-
-nnoremap <silent> <Leader>= :vertical resize +5<CR>
-nnoremap <silent> <Leader>- :vertical resize -5<CR>
-
-
-" }}}
-
 " => Windows =>  {{{
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 
