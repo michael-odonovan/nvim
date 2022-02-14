@@ -47,6 +47,9 @@ return packer.startup(function(use)
   -- better editing of quickfix window
   use 'stefandtw/quickfix-reflector.vim'
 
+  -- Zen mode
+  use 'junegunn/goyo.vim'
+
   -- improved text editing
   use "tpope/vim-commentary" -- Easily comment stuff
   use "tpope/vim-repeat" -- makes it able to to repeat vim-surround functions
