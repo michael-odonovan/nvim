@@ -32,9 +32,6 @@ nnoremap <leader>cd :cd %:p:h<CR>
 nnoremap <leader>cdl :lcd %:p:h<CR>
 autocmd BufEnter * silent! lcd %:p:h
 
-" Move to previous position in the file
-:nnoremap <leader>o <c-o>
-
 " turn line into Title Case
 :command! Title :s/\<\(\w\)\(\S*\)/\u\1\L\2/g
 
