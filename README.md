@@ -3,7 +3,7 @@
 ## Usage Notes:
 ### Global Search and Replace with Telescope and quickfix-reflector plugin
 - <C-g> = Telescope live_grep
-- <C-q> sends everything to quickfix window
+- <C-q> sends everything to quickfix window, default mapping
 - :s/search/replace/g
 - :w 
 
