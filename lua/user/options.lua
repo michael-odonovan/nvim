@@ -1,5 +1,10 @@
 local tabwidth = 2
+-- options
 local o = vim.o
+-- window options
+local wo = vim.wo
+-- buffer options
+local bo = vim.bo
 
 o.fileencoding = "utf-8"                  -- the encoding written to a file
 o.clipboard = "unnamedplus"               -- allows neovim to access the system clipboard
@@ -36,13 +41,13 @@ o.formatoptions = o.formatoptions .. 'tcrqnj'
 HOME = os.getenv("HOME")
 o.backupdir = HOME .. "/.vim/backup"
 
--- This is a safety net, whatever string you pass as parameter to vim.cmd will be interpreted as VimL.
+-- this is setting a window option
+wo.cursorline = true
+
+-- other way to do options:
 vim.cmd "set whichwrap+=<,>,[,],h,l"      -- make cursor wrap onto new line
 vim.cmd("set cursorline")
-vim.cmd([[
-set wrap
-set number
-]])
+
 
 
 

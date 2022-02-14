@@ -4,10 +4,10 @@
 --   visual_mode = "v",
 --   visual_block_mode = "x",
 --   term_mode = "t",
---   command_mode = "c",
+--   _mode = "c",
 
 -- Keys
---   C = ctrl, A = alt
+--   C = ctrl, A = alt, S = shift
 
 local opts = { noremap = true, silent = true }
 local term_opts = { silent = true }
@@ -66,10 +66,6 @@ keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 keymap("n", "j", "gj", opts)
 keymap("n", "k", "gk", opts)
 
--- Search shortcuts
-keymap("n", "<space>f", ":%s/", opts)
-keymap("n", "<space>F", ":,%s/", opts)
-
 -- Insert Mode ---------------------------------
 
 -- Visual Mode ---------------------------------
@@ -94,10 +90,12 @@ keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
--- Terminal --
+-- Terminal Mode -------------------------
 -- Better terminal navigation
 keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
 keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
 keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
+
+--  Command Mode --------------------------
 
