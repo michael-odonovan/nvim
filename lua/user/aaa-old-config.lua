@@ -72,31 +72,6 @@ map <leader>, :e ~/.config/nvim/<CR>
 
 " }}}
 
-" => netrw {{{
-"""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:netrw_liststyle = 0
-let g:netrw_localrmdir='rm -r'
-let g:netrw_sort_by = "name"
-
-" AutoOpen NetRW if vim called without parameters i.e. vim augroup
-" netrw-auto-open-if-no-params autocmd!  autocmd VimEnter * if argc() == 0 |
-" Explore! | endif augroup END
-
-function! ToggleNetrw()
-	if &ft ==# "netrw"
-		:Rex
-	else
-		:Ex
-	endif
-endfunc
-
-" Per default, netrw leaves unmodified buffers open. This autocommand
-" deletes netrw's buffer once it's hidden (using ':q', for example)
-autocmd FileType netrw setl bufhidden=delete
-
-" }}}
-
-
 " => Windows =>  {{{
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -145,7 +120,6 @@ augroup automkdir
 augroup END
 
 " }}}
-
 
 " => Built-In Vim Markdown Settings {{{
 """""""""""""""""""""""""""""""""""""""""""""""""""
