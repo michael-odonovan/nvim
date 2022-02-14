@@ -15,13 +15,14 @@ local term_opts = { silent = true }
 -- Shorten function name
 local keymap = vim.api.nvim_set_keymap
 
--- Leader Key -------------------------------------------
+
+-- Leader Key ============================================
 keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
--- Normal Mode -----------------------------------------
 
+-- Normal Mode ============================================
 -- Open File Explorer
 keymap("n", "<leader>e", ":call ToggleNetrw()<CR>", opts)
 keymap("n", "<leader>E", ":NvimTreeToggle<CR>", opts)
@@ -67,13 +68,11 @@ keymap("n", "j", "gj", opts)
 keymap("n", "k", "gk", opts)
 
 keymap("n", "<C-t>", ":Telescope find_files<CR>", opts)
-keymap("n", "<C-T>", ":Telescope live_grep<CR>", opts)
+keymap("n", "<C-g>", ":Telescope live_grep<CR>", opts)
 keymap("n", "<C-i>", ":Telescope lsp_references<CR>", opts)
 
--- Insert Mode ---------------------------------
 
--- Visual Mode ---------------------------------
-
+-- Visual Mode ==============================
 -- Stay in indent mode
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
@@ -86,20 +85,18 @@ keymap("v", "<A-k>", ":m .-2<CR>==", opts)
 keymap("v", "p", '"_dP', opts)
 
 
--- Visual Block Mode ----------------------------
-
+-- Visual Block Mode ================================
 -- Move text up and down
 keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
--- Terminal Mode -------------------------
+
+-- Terminal Mode ==================================
 -- Better terminal navigation
 keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
 keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
 keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
-
---  Command Mode --------------------------
 
