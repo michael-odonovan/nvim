@@ -1,9 +1,11 @@
-### Global Search and Replace 
-- :Rg SEARCH_TERM
-- cwindow opens
-- ggVG to select all occurances of my SEARCH_TERM
-- :s/SEARCH_TERM/REPLACE_WITH/g
+## This is my work in progress, converting to nvim lua
 
+## Usage Notes:
+### Global Search and Replace with Telescope and quickfix-reflector plugin
+- <C-g> = Telescope live_grep
+- <C-q> sends everything to quickfix window
+- :s/search/replace/g
+- :w 
 
 - check nvim health
 ```

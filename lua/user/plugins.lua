@@ -44,8 +44,7 @@ return packer.startup(function(use)
   -- colorscheme
   use "EdenEast/nightfox.nvim"
 
-  -- better global search and replace
-  use 'jremmen/vim-ripgrep'
+  -- better editing of quickfix window
   use 'stefandtw/quickfix-reflector.vim'
 
   -- improved text editing
