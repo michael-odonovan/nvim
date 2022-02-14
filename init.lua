@@ -6,6 +6,7 @@ require "user.aaa-old-config"
 require "user.autocommands"
 require "user.keymaps"
 require "user.options"
+require "user.netrw"
 
 -- plugins to load
 require "user.plugins"

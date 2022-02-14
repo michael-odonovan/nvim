@@ -23,24 +23,24 @@ vim.g.maplocalleader = " "
 -- Normal Mode -----------------------------------------
 
 -- Open File Explorer
-keymap("n", "<leader>e", ":call ToggleNetrw()<cr>", opts)
-keymap("n", "<leader>E", ":NvimTreeToggle<cr>", opts)
+keymap("n", "<leader>e", ":call ToggleNetrw()<CR>", opts)
+keymap("n", "<leader>E", ":NvimTreeToggle<CR>", opts)
 
 -- Splits
-keymap("n", "<leader>d", ":vsp<cr>", opts)
+keymap("n", "<leader>d", ":vsp<CR>", opts)
 
 -- Tabs
-keymap("n", "<leader>t", ":tabnew<cr>", opts)
-keymap("n", "<leader>l", ":tabn<cr>", opts)
-keymap("n", "<leader>h", ":tabp<cr>", opts)
+keymap("n", "<leader>t", ":tabnew<CR>", opts)
+keymap("n", "<leader>l", ":tabn<CR>", opts)
+keymap("n", "<leader>h", ":tabp<CR>", opts)
 
 -- Terminals
-keymap("n", "<leader>b", ":new|:term<cr>", opts)
+keymap("n", "<leader>b", ":new|:term<CR>", opts)
 
 -- Saving/Exiting
-keymap("n", "<leader>w", ":wa<cr>", opts)
-keymap("n", "<C-d>", ":q!<cr>", opts)
-keymap("n", "<esc>", ":silent! nohls<cr>", opts)
+keymap("n", "<leader>w", ":wa<CR>", opts)
+keymap("n", "<C-d>", ":q!<CR>", opts)
+keymap("n", "<esc>", ":silent! nohls<CR>", opts)
 
 -- Better window navigation
 keymap("n", "<C-h>", "<C-w>h", opts)
@@ -49,10 +49,10 @@ keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
 -- Resize with arrows
-keymap("n", "<leader>=", ":vertical resize +5<cr>", opts)
-keymap("n", "<leader>-", ":vertical resize -5<cr>", opts)
-keymap("n", "<C-Down>", ":resize +2<cr>", opts)
-keymap("n", "<C-Up>", ":resize -2<cr>", opts)
+keymap("n", "<leader>=", ":vertical resize +5<CR>", opts)
+keymap("n", "<leader>-", ":vertical resize -5<CR>", opts)
+keymap("n", "<C-Down>", ":resize +2<CR>", opts)
+keymap("n", "<C-Up>", ":resize -2<CR>", opts)
 
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
@@ -65,6 +65,11 @@ keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 -- visual line movement
 keymap("n", "j", "gj", opts)
 keymap("n", "k", "gk", opts)
+
+-- Telescope
+keymap("n", "<C-t>", ":Telescope find_files<CR>", opts)
+keymap("n", "<C-T>", ":Telescope live_grep<CR>", opts)
+keymap("n", "<C-R>", ":Telescope lsp_references<CR>", opts)
 
 -- Insert Mode ---------------------------------
 
