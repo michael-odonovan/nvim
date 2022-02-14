@@ -7,7 +7,7 @@ require "user.autocommands"
 require "user.keymaps"
 require "user.options"
 
--- Loading the plugins
+-- plugins to load
 require "user.plugins"
 
 -- Loading the plugin settings, if applicable

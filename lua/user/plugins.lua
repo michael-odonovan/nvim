@@ -48,19 +48,20 @@ return packer.startup(function(use)
   use 'jremmen/vim-ripgrep'
   use 'stefandtw/quickfix-reflector.vim'
 
-  -- general
-  use "lambdalisue/fern.vim"
-  use "goolord/alpha-nvim" -- lua version of vim startify
+  -- improved text editing
+  use "tpope/vim-commentary" -- Easily comment stuff
+  use "tpope/vim-repeat" -- makes it able to to repeat vim-surround functions
+  use "tpope/vim-surround" -- surround text with tags etc.
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
+  use "mattn/emmet-vim" -- <TAB>
+
+  -- general
   use 'norcalli/nvim-colorizer.lua' -- css color previews
   use "vim-scripts/loremipsum" -- :Loremipsum [wordcount]
   use "wbthomason/packer.nvim" -- Have packer manage itself
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used by lots of plugins
-  use "tpope/vim-commentary" -- Easily comment stuff
   use "moll/vim-bbye" -- about deleting buffers ???
-  use "tpope/vim-surround" -- surround text with tags etc.
-  use "tpope/vim-repeat" -- makes it able to to repeat vim-surround functions
   use "AndrewRadev/tagalong.vim" -- change html tag names
   use 'davidgranstrom/nvim-markdown-preview' -- :MardownPreview
 -- node dependencies: live-server, pandoc
@@ -69,7 +70,6 @@ return packer.startup(function(use)
   use "akinsho/toggleterm.nvim"
   use "lukas-reineke/indent-blankline.nvim"
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
-  use "mattn/emmet-vim" -- <TAB>
   use "ahmedkhalf/project.nvim" -- for project management
   use "lewis6991/impatient.nvim" -- helps load nvim lua files quicker
 
