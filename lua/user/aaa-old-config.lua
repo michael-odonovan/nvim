@@ -92,7 +92,6 @@ augroup END
 
 " }}}
 
-
 " => Built-In Vim Markdown Settings {{{
 """""""""""""""""""""""""""""""""""""""""""""""""""
 
