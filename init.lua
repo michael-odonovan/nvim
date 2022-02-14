@@ -6,6 +6,8 @@ require "user.options"
 require "user.keymaps"
 require "user.autocommands"
 require "user.netrw"
+require "user.goto-files-folders"
+
 -- call this after options
 require "user.aaa-old-config"
 

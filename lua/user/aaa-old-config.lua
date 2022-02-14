@@ -13,9 +13,6 @@ vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
 " This is needed otherwise you can only paste once:
 xnoremap <silent> p p:let @"=@0<CR>
 
-" Make yank Y behave like D & C
-map Y y$
-
 " Search shortcuts
 nnoremap <space>f :%s/
 nnoremap <space>F :,$s/
@@ -23,6 +20,9 @@ nnoremap <space>F :,$s/
 " Copy to the System Clipboard with YY
 noremap YY "+y<CR>
 noremap XX "+x<CR>
+
+" Make yank Y behave like D & C
+map Y y$
 
 cnoremap <expr> <C-P> wildmenumode() ? "\<C-P>" : "\<C-k>"
 cnoremap <expr> <C-N> wildmenumode() ? "\<C-N>" : "\<C-j>"
@@ -42,34 +42,6 @@ autocmd BufEnter * silent! lcd %:p:h
 :command! WWord setlocal iskeyword+=-
 
 " }}}
-
-" => Opening Files & Folders {{{
-"""""""""""""""""""""""""""""""""""""""""""""""""""""
-map <leader>, :e ~/.config/nvim/<CR>
-
-" Latest project
-:command! Project :e ~/Javascript/client-sites/rbcmobility
-:command! Blog :e ~/Javascript/michaelodonovan-net
-
-:command! Learning :e ~/Javascript/Learning
-:command! Patterns :e ~/Javascript/Learning/patterns/pages/
-:command! Scratch :e ~/CodingNotes/scratch.md
-:command! Vim :e ~/CodingNotes/vim.md
-:command! Daytona :vs ~/.config/nvim/colors/daytona.vim
-:command! Bashrc :e ~/.bashrc
-:command! Source :source ~/.config/nvim/init.vim
-:command! Cn :e ~/CodingNotes
-:command! Cf :e ~/Coding
-:command! Notes :e ~/Documents/notes-general
-:command! Documents :e ~/Documents
-:command! Scripts :e ~/bin
-:command! Js :e ~/Javascript
-:command! Desk :e ~/desktop
-:command! Docs :e ~/documents
-:command! Downloads :e ~/Downloads
-
-" }}}
-
 
 " => Windows =>  {{{
 """""""""""""""""""""""""""""""""""""""""""""""""""""

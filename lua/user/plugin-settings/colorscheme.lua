@@ -1,4 +1,8 @@
-local nightfox = require('nightfox')
+-- Setup nvim-cmp.
+local status_ok, nightfox = pcall(require, "nightfox")
+if not status_ok then
+  return
+end
 
 nightfox.setup({
   styles = {
