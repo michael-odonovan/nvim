@@ -41,5 +41,4 @@ function Wipeout()
 endfunction
 command! Wipeout :call Wipeout()
 
-
 ]])

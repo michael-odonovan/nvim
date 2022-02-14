@@ -66,10 +66,9 @@ keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 keymap("n", "j", "gj", opts)
 keymap("n", "k", "gk", opts)
 
--- Telescope
 keymap("n", "<C-t>", ":Telescope find_files<CR>", opts)
 keymap("n", "<C-T>", ":Telescope live_grep<CR>", opts)
-keymap("n", "<C-R>", ":Telescope lsp_references<CR>", opts)
+keymap("n", "<C-i>", ":Telescope lsp_references<CR>", opts)
 
 -- Insert Mode ---------------------------------
 

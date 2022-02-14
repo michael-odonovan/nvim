@@ -2,11 +2,12 @@
 
 require "user.lsp"
 
-require "user.aaa-old-config"
-require "user.autocommands"
-require "user.keymaps"
 require "user.options"
+require "user.keymaps"
+require "user.autocommands"
 require "user.netrw"
+-- call this after options
+require "user.aaa-old-config"
 
 -- plugins to load
 require "user.plugins"
