@@ -1,4 +1,4 @@
-## This is my work in progress, converting to nvim lua
+## Converting to Lua, about 90% there, : )
 
 ## Usage Notes:
 ### Global Search and Replace with Telescope and quickfix-reflector plugin
@@ -16,8 +16,6 @@ I have turned off lsp suggestions to make it a bit quieter/saner.
 Suggestions are currently:
 - buffer
 - snippets
-
-
 
 
 - check nvim health
