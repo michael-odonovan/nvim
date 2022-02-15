@@ -7,10 +7,23 @@
 - :s/search/replace/g
 - :w 
 
+### Autocomplete / Snippets
+- <CR> = accept suggestion
+- <C-j,k> = scroll suggestions
+- <C-u> = go to next position in Snippet
+- <C-i> = ignore suggestions
+I have turned off lsp suggestions to make it a bit quieter/saner.
+Suggestions are currently:
+- buffer
+- snippets
+
+
+
+
 - check nvim health
-```
-:checkhealth
-```
+  ```
+  :checkhealth
+  ```
 
 - Fix copy and paste? On Ubuntu
   ```
