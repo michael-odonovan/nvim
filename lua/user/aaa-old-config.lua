@@ -9,7 +9,6 @@ vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
 " copy pwd to clipboard
 :command! Pwd let @+ = expand('%:p')
 
-
 " This is needed otherwise you can only paste once:
 xnoremap <silent> p p:let @"=@0<CR>
 
