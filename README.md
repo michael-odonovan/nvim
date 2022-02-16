@@ -8,12 +8,16 @@
 - :w 
 
 ### Autocomplete / Snippets
-- <C-i> = ignore suggestions
+- <C-i> = make suggestions disappear
 - <C-j,k> = scroll suggestions
 - <CR> = accept suggestion
 - <C-u> = go to next position in the chosen Snippet
 - I have turned off nvim_lsp suggestions to make it a bit quieter/saner.
 - Suggestions are currently: buffer, luasnip, path
+
+### Emmet
+- <Tab>
+have commented this out for now, as using html snippets 
 
 
 - check nvim health
