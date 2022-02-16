@@ -85,7 +85,7 @@ return packer.startup(function(use)
   -- LuaSnip snippets
   use "saadparwaiz1/cmp_luasnip" -- integration with cmp completion engine
   use "L3MON4D3/LuaSnip" -- snippet engine
-  use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
+  -- use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
 
   -- LSP
   use "neovim/nvim-lspconfig" -- enable LSP
