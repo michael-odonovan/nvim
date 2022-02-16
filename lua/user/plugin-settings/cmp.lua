@@ -3,12 +3,16 @@ if not cmp_status_ok then
   return
 end
 
+
+-- LuaSnip Stuff --
 local snip_status_ok, luasnip = pcall(require, "luasnip")
 if not snip_status_ok then
   return
 end
+require("luasnip/loaders/from_vscode").lazy_load({
+  paths = { "./my-snippets"}
+})
 
-require("luasnip/loaders/from_vscode").lazy_load()
 
 local check_backspace = function()
   local col = vim.fn.col "." - 1
@@ -95,26 +99,28 @@ cmp.setup {
       "s",
     }),
   },
+
   formatting = {
     fields = { "kind", "abbr", "menu" },
+
     format = function(entry, vim_item)
       -- Kind icons
       vim_item.kind = string.format("%s", kind_icons[vim_item.kind])
       -- vim_item.kind = string.format('%s %s', kind_icons[vim_item.kind], vim_item.kind) -- This concatonates the icons with the name of the item kind
       vim_item.menu = ({
-        -- nvim_lsp = "[LSP]",
-        luasnip = "[Snippet]",
         buffer = "[Buffer]",
+        luasnip = "[Snippet]",
         path = "[Path]",
+        nvim_lsp = "[LSP]",
       })[entry.source.name]
       return vim_item
     end,
   },
   sources = {
-    -- { name = "nvim_lsp" },
-    { name = "luasnip" },
     { name = "buffer" },
+    { name = "luasnip" },
     { name = "path" },
+    { name = "nvim_lsp" },
   },
   confirm_opts = {
     behavior = cmp.ConfirmBehavior.Replace,
