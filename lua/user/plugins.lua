@@ -55,7 +55,7 @@ return packer.startup(function(use)
   use "tpope/vim-repeat" -- makes it able to to repeat vim-surround functions
   use "tpope/vim-surround" -- surround text with tags etc.
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
-  -- use "mattn/emmet-vim" -- <TAB>
+  use "mattn/emmet-vim" -- <TAB>
 
   -- general
   use 'norcalli/nvim-colorizer.lua' -- css color previews
