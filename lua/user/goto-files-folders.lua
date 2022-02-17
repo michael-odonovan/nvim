@@ -6,6 +6,7 @@ map <leader>, :e ~/.config/nvim/<CR>
 :command! Project :e ~/RbcMobilityNextJs
 :command! Blog :e ~/Blog
 
+:command! Snippets :e ~/MySnippets
 :command! Learning :e ~/Learning
 :command! Scratch :e ~/CodingNotes/scratch.md
 :command! Bashrc :e ~/.bashrc
