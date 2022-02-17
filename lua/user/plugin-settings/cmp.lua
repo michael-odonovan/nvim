@@ -9,7 +9,7 @@ if not snip_status_ok then
   return
 end
 
-require("luasnip.loaders.from_vscode").load({paths={'~/.config/nvim/friendly-snippets'}})
+require("luasnip.loaders.from_vscode").load({paths={'~/MySnippets'}})
 
 local check_backspace = function()
   local col = vim.fn.col "." - 1
