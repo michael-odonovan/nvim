@@ -1,0 +1,11 @@
+{
+  "javascript function vanilla": {
+    "prefix": "fun",
+    "body": [
+      "function ${1}(${2}) {",
+      "  ${3}",
+      "}"
+    ],
+    "description": ""
+  }
+}

@@ -18,7 +18,8 @@ require "user.plugins"
 
 -- plugin settings =============================
 -- snippets
-require "user.plugin-settings.cmp"
+require "user.plugin-settings.cmp-luasnip"
+-- require "user.plugin-settings.cmp-nvim-snippy"
 
 -- other
 require "user.plugin-settings.autopairs"

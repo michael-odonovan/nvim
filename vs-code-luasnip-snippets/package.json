@@ -1,0 +1,50 @@
+{
+  "name": "My Snippets",
+  "engines": {
+    "vscode": "^1.11.0"
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "language": [
+          "css",
+          "scss",
+          "javascriptreact",
+          "typescriptreact"
+        ],
+        "path": "./snippets/css.json"
+      },
+      {
+        "language": [
+          "javascript",
+          "javascriptreact",
+          "typescriptreact"
+        ],
+        "path": "./snippets/javascript-ecosystem/javascript-vanilla.json"
+      },
+      {
+        "language": [
+          "javascriptreact",
+          "typescriptreact"
+        ],
+        "path": "./snippets/javascript-ecosystem/styled-components.json"
+      },
+      {
+        "language": [
+          "javascriptreact",
+          "typescriptreact"
+        ],
+        "path": "./snippets/javascript-ecosystem/next-js.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/javascript-ecosystem/react-ts.json"
+      },
+      {
+        "language": "json",
+        "path": "./snippets/json.json"
+      }
+    ]
+  }
+}
+
