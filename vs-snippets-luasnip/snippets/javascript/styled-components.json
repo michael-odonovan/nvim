@@ -1,0 +1,20 @@
+{
+  "Import Styled Components": {
+    "prefix": "isc",
+    "body": [
+      "import styled from 'styled-components'"
+    ],
+    "description": "Import Styled Components package"
+  },
+  "Styled Component": {
+    "prefix": "sc",
+    "body": [
+      "const ${1} = styled.${2:div}`",
+      "  ${3}",
+      "`",
+      "<${4}>",
+      "</${4}>"
+    ],
+    "description": "Styled Component"
+  }
+}

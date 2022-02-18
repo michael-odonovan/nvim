@@ -1,0 +1,9 @@
+{
+  "Import NextJs Image": {
+    "prefix": "ini",
+    "body": [
+      "import Image from 'next/image'"
+    ],
+    "description": "Import NextJs Image API"
+  }
+}

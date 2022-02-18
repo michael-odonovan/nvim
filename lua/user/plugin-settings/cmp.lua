@@ -8,7 +8,7 @@ end
 -- if not snip_status_ok then
 --   return
 -- end
--- require("luasnip.loaders.from_vscode").load({paths={'~/MySnippets'}})
+-- require("luasnip.loaders.from_vscode").load({paths={'~/.config/nvim/vs-snippets-luasnip'}})
 
 -- snippy require variable
 local snip_status_ok, snippy = pcall(require, "snippy")

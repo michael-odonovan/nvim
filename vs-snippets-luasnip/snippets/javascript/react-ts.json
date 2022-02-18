@@ -1,0 +1,23 @@
+{
+  "Typescript Functional Component": {
+    "prefix": "tsfc",
+    "body": [
+      "export default function ${1}({${2}}: ${3}Props) {",
+      "  return (",
+      "    ${4}",
+      "  )",
+      "}",
+      "interface ${3}Props {",
+      "  ${2}: ${5}",
+      "}"
+    ],
+    "description": "Typescipt Functional Component with Interface (that needs to be moved above)"
+  },
+  "Import Component": {
+    "prefix": "imp",
+    "body": [
+      "import ${1} from '${2}'"
+    ],
+    "description": "import component from within project"
+  }
+}
