@@ -19,7 +19,6 @@ require "user.plugins"
 -- plugin settings =============================
 -- snippets
 require "user.plugin-settings.cmp"
--- require "user.plugin-settings.cmp-snippy"
 
 -- other
 require "user.plugin-settings.autopairs"
