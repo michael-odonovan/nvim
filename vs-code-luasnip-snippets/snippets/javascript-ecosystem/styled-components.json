@@ -4,7 +4,7 @@
     "body": [
       "import styled from 'styled-components'"
     ],
-    "description": "Import Styled Components package"
+    "description": ""
   },
   "Styled Component": {
     "prefix": "sc",
@@ -15,7 +15,7 @@
       "${0}<${1}>",
       "</${1}>"
     ],
-    "description": "Styled Component"
+    "description": ""
   },
   "Slanted Div": {
     "prefix": "slanted div",
@@ -29,7 +29,7 @@
       "${0}<SlantedDiv>",
       "</SlantedDiv>"
     ],
-    "description": "Styled Component"
+    "description": ""
   },
   "Hero Image Component": {
     "prefix": "hero",
