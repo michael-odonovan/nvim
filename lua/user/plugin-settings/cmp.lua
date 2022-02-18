@@ -3,12 +3,19 @@ if not cmp_status_ok then
   return
 end
 
--- LuaSnip Stuff --
-local snip_status_ok, luasnip = pcall(require, "luasnip")
+-- LuaSnip require variable --
+-- local snip_status_ok, luasnip = pcall(require, "luasnip")
+-- if not snip_status_ok then
+--   return
+-- end
+-- require("luasnip.loaders.from_vscode").load({paths={'~/MySnippets'}})
+
+-- snippy require variable
+local snip_status_ok, snippy = pcall(require, "snippy")
 if not snip_status_ok then
   return
 end
-require("luasnip.loaders.from_vscode").load({paths={'~/MySnippets'}})
+
 
 local check_backspace = function()
   local col = vim.fn.col "." - 1
@@ -47,8 +54,12 @@ local kind_icons = {
 
 cmp.setup {
   snippet = {
+    -- REQUIRED - you must specify a snippet engine
     expand = function(args)
-      luasnip.lsp_expand(args.body) -- For `luasnip` users.
+      snippy.expand_snippet(args.body) -- For `snippy`
+      -- luasnip.lsp_expand(args.body) -- For `luasnip`
+      -- vim.fn["vsnip#anonymous"](args.body) -- For `vsnip`
+      -- vim.fn["UltiSnips#Anon"](args.body) -- For `ultisnips`
     end,
   },
   mapping = {
@@ -69,31 +80,34 @@ cmp.setup {
     ["<C-u>"] = cmp.mapping(function(fallback)
       if cmp.visible() then
         cmp.select_next_item()
-      elseif luasnip.expandable() then
-        luasnip.expand()
-      elseif luasnip.expand_or_jumpable() then
-        luasnip.expand_or_jump()
+      elseif snippy.can_expand_or_advance() then
+        snippy.expand_or_advance()
+      elseif snippy.can_jump() then
+        snippy.next()
+      -- if cmp.visible() then
+      --   cmp.select_next_item()
+      -- elseif luasnip.expandable() then
+      --   luasnip.expand()
+      -- elseif luasnip.expand_or_jumpable() then
+      --   luasnip.expand_or_jump()
       elseif check_backspace() then
         fallback()
       else
         fallback()
       end
-    end, {
-      "i",
-      "s",
-    }),
-    ["<S-Tab>"] = cmp.mapping(function(fallback)
+    end, { "i", "s", }),
+
+    ["<S-u>"] = cmp.mapping(function(fallback)
       if cmp.visible() then
         cmp.select_prev_item()
-      elseif luasnip.jumpable(-1) then
-        luasnip.jump(-1)
+      elseif snippy.can_jump(-1) then
+        snippy.previous(-1)
+      -- elseif luasnip.jumpable(-1) then
+      --   luasnip.jump(-1)
       else
         fallback()
       end
-    end, {
-      "i",
-      "s",
-    }),
+    end, { "i", "s", }),
   },
 
   formatting = {
@@ -105,7 +119,8 @@ cmp.setup {
       -- vim_item.kind = string.format('%s %s', kind_icons[vim_item.kind], vim_item.kind) -- This concatonates the icons with the name of the item kind
       vim_item.menu = ({
         buffer = "[Buffer]",
-        luasnip = "[Snippet]",
+        snippy = "[Snippet",
+        -- luasnip = "[Snippet]",
         path = "[Path]",
         -- nvim_lsp = "[LSP]",
       })[entry.source.name]
@@ -114,7 +129,8 @@ cmp.setup {
   },
   sources = {
     { name = "buffer" },
-    { name = "luasnip" },
+    { name = "snippy" },
+    -- { name = "luasnip" },
     { name = "path" },
     -- { name = "nvim_lsp" },
   },
