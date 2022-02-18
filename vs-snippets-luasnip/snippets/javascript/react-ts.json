@@ -14,7 +14,7 @@
     "description": "Typescipt Functional Component with Interface (that needs to be moved above)"
   },
   "Import Component": {
-    "prefix": "imp",
+    "prefix": "ic",
     "body": [
       "import ${1} from '${2}'"
     ],
