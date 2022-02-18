@@ -1,22 +1,28 @@
 -- gd = go to
 
+-- lsp ==============================
 require "user.lsp"
 
+-- basics ============================
 require "user.options"
 require "user.keymaps"
 require "user.autocommands"
 require "user.netrw"
 require "user.goto-files-folders"
 
--- call this after options
+-- call this after options ================================
 require "user.aaa-old-config"
 
--- plugins to load
+-- plugins to load ============================
 require "user.plugins"
 
--- Loading the plugin settings, if applicable
+-- plugin settings =============================
+-- snippets
+-- require "user.plugin-settings.cmp"
+require "user.plugin-settings.cmp-snippy"
+
+-- other
 require "user.plugin-settings.autopairs"
-require "user.plugin-settings.cmp"
 require "user.plugin-settings.colorscheme"
 require "user.plugin-settings.emmet"
 require "user.plugin-settings.gitsigns"

@@ -82,9 +82,13 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-cmdline" -- cmdline completions
   use "hrsh7th/cmp-nvim-lsp" -- lsp completions
 
-  -- LuaSnip snippets
-  use "saadparwaiz1/cmp_luasnip" -- integration with cmp completion engine
-  use "L3MON4D3/LuaSnip" -- snippet engine
+  -- snippets
+  -- LuaSnip
+  -- use "saadparwaiz1/cmp_luasnip" -- integration with cmp completion engine
+  -- use "L3MON4D3/LuaSnip" -- snippet engine
+  -- nvim snippy
+  use 'dcampos/nvim-snippy'
+  use 'dcampos/cmp-snippy'
 
   -- LSP
   use "neovim/nvim-lspconfig" -- enable LSP
