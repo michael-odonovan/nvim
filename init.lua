@@ -21,7 +21,6 @@ require "user.plugins"
 require "user.plugin-settings.cmp"
 -- require "user.plugin-settings.cmp-snippy"
 
-
 -- other
 require "user.plugin-settings.autopairs"
 require "user.plugin-settings.colorscheme"
