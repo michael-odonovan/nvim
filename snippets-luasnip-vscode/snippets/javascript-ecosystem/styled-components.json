@@ -76,8 +76,7 @@
       "  background: green;",
       "  opacity: 0.5;",
       "`",
-      "<HeroTint>",
-      "</HeroTint>"
+      "<HeroTint></HeroTint>"
     ],
     "description": "HeroTint Styled Component"
   },
