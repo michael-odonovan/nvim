@@ -8,7 +8,7 @@ local snip_status_ok, luasnip = pcall(require, "luasnip")
 if not snip_status_ok then
   return
 end
-require("luasnip.loaders.from_vscode").load({paths={'~/.config/nvim/vs-code-luasnip-snippets'}})
+require("luasnip.loaders.from_vscode").load({paths={'~/.config/nvim/snippets-luasnip-vscode'}})
 
 
 local check_backspace = function()

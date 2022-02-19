@@ -3,4 +3,10 @@ if not status_ok then
   return
 end
 
-colorizer.setup()
+-- Attach to certain Filetypes
+colorizer.setup {
+  'css';
+  'javascript';
+  'html';
+}
+

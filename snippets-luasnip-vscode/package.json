@@ -7,6 +7,13 @@
     "snippets": [
       {
         "language": [
+          "javascriptreact",
+          "typescriptreact"
+        ],
+        "path": "./snippets/javascript-ecosystem/imports.json"
+      },
+      {
+        "language": [
           "css",
           "scss",
           "javascriptreact",

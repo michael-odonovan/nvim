@@ -1,9 +1,0 @@
-{
-  "Import NextJs Image": {
-    "prefix": "ii",
-    "body": [
-      "import Image from 'next/image'"
-    ],
-    "description": "Import NextJs Image API"
-  }
-}

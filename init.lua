@@ -24,6 +24,7 @@ require "user.plugin-settings.cmp-luasnip"
 -- other
 require "user.plugin-settings.autopairs"
 require "user.plugin-settings.colorscheme"
+require "user.plugin-settings.nvim-colorizer"
 require "user.plugin-settings.emmet"
 require "user.plugin-settings.gitsigns"
 require "user.plugin-settings.goyo"

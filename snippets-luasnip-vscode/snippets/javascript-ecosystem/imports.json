@@ -1,0 +1,30 @@
+{
+  "import hero-image": {
+    "prefix": "ihero",
+    "body": [
+      "import HeroImage from '../components/hero-image'"
+    ],
+    "description": ""
+  },
+  "Import Component": {
+    "prefix": "ic",
+    "body": [
+      "import ${1} from '${2}'"
+    ],
+    "description": "import component from within project"
+  },
+  "Import Styled Components": {
+    "prefix": "isc",
+    "body": [
+      "import styled from 'styled-components'"
+    ],
+    "description": ""
+  },
+  "Import NextJs Image": {
+    "prefix": "ii",
+    "body": [
+      "import Image from 'next/image'"
+    ],
+    "description": "Import NextJs Image API"
+  }
+}
