@@ -32,8 +32,7 @@
       "  transform: skewY(-6deg);",
       "`",
       "<SlantedDiv2>",
-      "</SlantedDiv2>",
-      ""
+      "</SlantedDiv2>"
     ],
     "description": "slanted div 2"
   },
@@ -65,7 +64,6 @@
     "  font-family: Montserrat;",
     "  letter-spacing: 0.1em;",
     "`",
-    ""
   ],
   "description": "Styled Component Hero Text"
   },
@@ -76,10 +74,10 @@
       "  grid-row: 1 / 25;",
       "  grid-column: 1 / 25;",
       "  background: green;",
-      "  opacity: 0.5",
+      "  opacity: 0.5;",
       "`",
-      "",
-      ""
+      "<HeroTint>",
+      "</HeroTint>"
     ],
     "description": "HeroTint Styled Component"
   }
