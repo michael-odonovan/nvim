@@ -6,6 +6,27 @@
     ],
     "description": ""
   },
+  "import hero-text": {
+    "prefix": "ihero text",
+    "body": [
+      "import HeroText from '../components/hero-text'"
+    ],
+    "description": ""
+  },
+  "import hero-tint": {
+    "prefix": "ihero tint",
+    "body": [
+      "import HeroTint from '../components/hero-tint'"
+    ],
+    "description": ""
+  },
+  "import hero-border": {
+    "prefix": "ihero border",
+    "body": [
+      "import HeroBorder from '../components/hero-border'"
+    ],
+    "description": ""
+  },
   "Import Component": {
     "prefix": "ic",
     "body": [

@@ -63,6 +63,7 @@
     "  font-size: calc(12px + 3.5vw);",
     "  font-family: Montserrat;",
     "  letter-spacing: 0.1em;",
+    "  text-align: center;",
     "`"
   ],
   "description": "Styled Component Hero Text"
