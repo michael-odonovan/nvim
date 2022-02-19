@@ -31,7 +31,7 @@
       "  margin-top: -8vw;",
       "  transform: skewY(-6deg);",
       "`",
-      "<SlantedDiv2>",
+      "${0}<SlantedDiv2>",
       "</SlantedDiv2>"
     ],
     "description": "slanted div 2"
@@ -47,7 +47,7 @@
       "  alt=\"${2}\"",
       "  objectPosition=\"cover\"",
       ">",
-      "  <HeroText>${1}</HeroText>",
+      "  ${0}<HeroText>${1}</HeroText>",
       "</HeroImage>"
     ],
     "description": ""
@@ -63,7 +63,7 @@
     "  font-size: calc(12px + 3.5vw);",
     "  font-family: Montserrat;",
     "  letter-spacing: 0.1em;",
-    "`",
+    "`"
   ],
   "description": "Styled Component Hero Text"
   },
