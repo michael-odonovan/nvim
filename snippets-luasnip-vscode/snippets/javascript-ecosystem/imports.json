@@ -2,27 +2,9 @@
   "import hero-image": {
     "prefix": "ihero",
     "body": [
-      "import HeroImage from '../components/hero-image'"
-    ],
-    "description": ""
-  },
-  "import hero-text": {
-    "prefix": "ihero text",
-    "body": [
-      "import HeroText from '../components/hero-text'"
-    ],
-    "description": ""
-  },
-  "import hero-tint": {
-    "prefix": "ihero tint",
-    "body": [
-      "import HeroTint from '../components/hero-tint'"
-    ],
-    "description": ""
-  },
-  "import hero-border": {
-    "prefix": "ihero border",
-    "body": [
+      "import HeroImage from '../components/hero-image'",
+      "import HeroText from '../components/hero-text'",
+      "import HeroTint from '../components/hero-tint'",
       "import HeroBorder from '../components/hero-border'"
     ],
     "description": ""

@@ -37,17 +37,19 @@
     "description": "slanted div 2"
   },
   "Hero Image Component": {
-    "prefix": "hero component",
+    "prefix": "hero",
     "body": [
       "<HeroImage",
       "  heightMobile=\"80vw\"",
       "  heightDesktop=\"70vw\"",
       "  breakPoint=\"600px\"",
-      "  src=\"/${3}\"",
+      "  src=\"/${1}.jpg\"",
       "  alt=\"${2}\"",
       "  objectPosition=\"cover\"",
       ">",
-      "  ${0}<HeroText>${1}</HeroText>",
+      "  <HeroTint></HeroTint>",
+      "  <HeroBorder></HeroBorder>",
+      "  <HeroText>${3}</HeroText>",
       "</HeroImage>"
     ],
     "description": ""
