@@ -3,6 +3,13 @@ vim.cmd([[
 " copy pwd to clipboard
 :command! Pwd let @+ = expand('%:p')
 
+" changing Wword Behaviour
+:command! Wword setlocal iskeyword-=-
+:command! WWord setlocal iskeyword+=-
+
+" turn line into Title Case
+:command! Title :s/\<\(\w\)\(\S*\)/\u\1\L\2/g
+
 " :Fold
 function! Fold()
 	if &ft ==# "markdown"

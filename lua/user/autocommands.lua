@@ -8,16 +8,20 @@ augroup _general_settings
   autocmd FileType qf set nobuflisted
 augroup end
 
+
+" when resizeing entire window, keep splits even size
 augroup _auto_resize
   autocmd!
     autocmd VimResized * wincmd =
 augroup end
 
+" set spell on all markdown files
 " augroup _markdown
 "   autocmd!
 "   autocmd FileType markdown setlocal spell
 " augroup end
 
+" remember cursor position
 augroup initvim-remember-cursor-position
 	autocmd!
 	autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif

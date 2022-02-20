@@ -80,6 +80,15 @@ keymap("n", "XX", "+x<CR>", opts)
 -- Make yank Y behave like D & C
 keymap("n", "Y", "y$", opts)
 
+-- change current working directory stuff
+keymap("n", "<leader>cd", ":cd %:p:h<CR>:pwd<CR>", opts)
+keymap("n", "<leader>cdl", ":lcd %:p:h<CR>:pwd<CR>", opts)
+
+-- search shortcuts (stubbornly vimscript)
+vim.cmd([[
+  nnoremap <space>f :%s/
+  nnoremap <space>F :,$s/
+]])
 
 -- Visual Mode ==============================
 -- Stay in indent mode

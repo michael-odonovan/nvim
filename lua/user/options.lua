@@ -7,6 +7,7 @@ local wo = vim.wo
 local bo = vim.bo
 
 
+vim.cmd([[ set undodir=~/.config/nvim/undo-directory ]])
 o.autochdir = true
 o.fileencoding = "utf-8"                  -- the encoding written to a file
 o.clipboard = "unnamedplus"               -- allows neovim to access the system clipboard
@@ -48,6 +49,8 @@ o.backupdir = HOME .. "/.vim/backup"
 o.printoptions = "paper:A4,duplex:off,number:y,portrait:y,left:0pc"
 o.printfont = "Courier:h10"
 
+-- markdown code block highlighting
+vim.g.markdown_fenced_languages = { 'html', 'xml', 'python', 'bash=sh', 'css', 'sass', 'javascript', 'js=javascript', 'json=javascript', 'jsx=javascript.jsx', 'typescript', 'tsx=typescript.tsx' }
 
 -- this is setting a window option
 wo.cursorline = true
