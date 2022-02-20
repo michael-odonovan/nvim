@@ -31,7 +31,7 @@ keymap("n", "<leader>E", ":NvimTreeToggle<CR>", opts)
 keymap("n", "<leader>d", ":vsp<CR>", opts)
 
 -- Tabs
--- keymap("n", "<leader>t", ":tabnew %<CR>:Ex<CR>", opts)
+-- open a new tab in the current directory, which because no file is called, will mean opening netrw
 keymap("n", "<leader>t", ":tabnew %:p:h<CR>", opts)
 keymap("n", "<leader>l", ":tabn<CR>", opts)
 keymap("n", "<leader>h", ":tabp<CR>", opts)
