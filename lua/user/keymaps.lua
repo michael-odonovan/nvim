@@ -31,7 +31,8 @@ keymap("n", "<leader>E", ":NvimTreeToggle<CR>", opts)
 keymap("n", "<leader>d", ":vsp<CR>", opts)
 
 -- Tabs
-keymap("n", "<leader>t", ":tabnew %<CR>:Ex<CR>", opts)
+-- keymap("n", "<leader>t", ":tabnew %<CR>:Ex<CR>", opts)
+keymap("n", "<leader>t", ":tabnew %:p:h<CR>", opts)
 keymap("n", "<leader>l", ":tabn<CR>", opts)
 keymap("n", "<leader>h", ":tabp<CR>", opts)
 
