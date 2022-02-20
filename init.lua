@@ -7,8 +7,10 @@ require "user.lsp"
 require "user.options"
 require "user.keymaps"
 require "user.autocommands"
+require "user.commands-functions"
 require "user.netrw"
 require "user.goto-files-folders"
+require "user.terminals"
 
 -- call this after options ================================
 require "user.aaa-old-config"

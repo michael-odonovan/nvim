@@ -19,8 +19,7 @@
       "  transform: skewY(5deg);",
       "  z-index: 100;",
       "`",
-      "${0}<SlantedDiv>",
-      "</SlantedDiv>"
+      "${0}<SlantedDiv></SlantedDiv>"
     ],
     "description": ""
   },
@@ -31,8 +30,7 @@
       "  margin-top: -8vw;",
       "  transform: skewY(-6deg);",
       "`",
-      "${0}<SlantedDiv2>",
-      "</SlantedDiv2>"
+      "${0}<SlantedDiv2></SlantedDiv2>"
     ],
     "description": "slanted div 2"
   },

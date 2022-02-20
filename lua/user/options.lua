@@ -6,6 +6,7 @@ local wo = vim.wo
 -- buffer options
 local bo = vim.bo
 
+
 o.fileencoding = "utf-8"                  -- the encoding written to a file
 o.clipboard = "unnamedplus"               -- allows neovim to access the system clipboard
 o.mouse = "a"                             -- allow the mouse to be used in neovi
@@ -40,6 +41,12 @@ o.foldmethod = "marker"
 o.formatoptions = o.formatoptions .. 'tcrqnj'
 HOME = os.getenv("HOME")
 o.backupdir = HOME .. "/.vim/backup"
+
+-- Turn off double sided printing
+-- duplex is double sided
+o.printoptions = "paper:A4,duplex:off,number:y,portrait:y,left:0pc"
+o.printfont = "Courier:h10"
+
 
 -- this is setting a window option
 wo.cursorline = true

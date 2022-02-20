@@ -15,8 +15,6 @@ let @k="d2kp"
 " React css modules - change normal css styles to {styles.mystyle}
 let @m="0f\"r{astyles.\<esc>f\"r}"
 
-let @b="oborder: 1px solid red;\<esc>"
-
 " Remove whitespace just inside a div (vim-surround)
 let @d="?><cr>lx/><cr>hx<esc>"
 

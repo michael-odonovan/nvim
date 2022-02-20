@@ -21,7 +21,7 @@ endfunction
 command! Fold :call Fold()
 
 
-" :Hardcopy
+" Printing - couple of settings are in options.lua
 function! Hardcopy()
 	:syntax off
 	:set printfont=courier:h11
