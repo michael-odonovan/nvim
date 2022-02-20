@@ -31,7 +31,7 @@ keymap("n", "<leader>E", ":NvimTreeToggle<CR>", opts)
 keymap("n", "<leader>d", ":vsp<CR>", opts)
 
 -- Tabs
-keymap("n", "<leader>t", ":tabnew<CR>", opts)
+keymap("n", "<leader>t", ":tabnew %<CR>:Ex<CR>", opts)
 keymap("n", "<leader>l", ":tabn<CR>", opts)
 keymap("n", "<leader>h", ":tabp<CR>", opts)
 
@@ -67,9 +67,17 @@ keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 keymap("n", "j", "gj", opts)
 keymap("n", "k", "gk", opts)
 
+-- Telescope
 keymap("n", "<C-t>", ":Telescope find_files<CR>", opts)
 keymap("n", "<C-g>", ":Telescope live_grep<CR>", opts)
 keymap("n", "<C-i>", ":Telescope lsp_references<CR>", opts)
+
+-- Better Yanking, Ahem..
+-- Copy to the System Clipboard with YY
+keymap("n", "YY", "+y<CR>", opts)
+keymap("n", "XX", "+x<CR>", opts)
+-- Make yank Y behave like D & C
+keymap("n", "Y", "y$", opts)
 
 
 -- Visual Mode ==============================
@@ -84,6 +92,8 @@ keymap("v", "<A-k>", ":m .-2<CR>==", opts)
 -- When you paste over text, keep the original text to paste
 keymap("v", "p", '"_dP', opts)
 
+-- Search for visually selected text with //
+keymap("v", "//", "y/\\V<C-R>=escape(@\",'/\')<CR><CR>", opts)
 
 -- Visual Block Mode ================================
 -- Move text up and down

@@ -13,11 +13,10 @@ augroup _auto_resize
     autocmd VimResized * wincmd =
 augroup end
 
-augroup _markdown
-  autocmd!
-  autocmd FileType markdown setlocal wrap
-  autocmd FileType markdown setlocal spell
-augroup end
+" augroup _markdown
+"   autocmd!
+"   autocmd FileType markdown setlocal spell
+" augroup end
 
 augroup initvim-remember-cursor-position
 	autocmd!

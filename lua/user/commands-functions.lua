@@ -1,5 +1,8 @@
 vim.cmd([[
 
+" copy pwd to clipboard
+:command! Pwd let @+ = expand('%:p')
+
 " :Fold
 function! Fold()
 	if &ft ==# "markdown"
