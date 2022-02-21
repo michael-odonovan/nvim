@@ -23,6 +23,8 @@ vim.g.maplocalleader = " "
 
 
 -- Normal Mode ============================================
+keymap("n", "<leader>,", ":e ~/.config/nvim/init.lua<CR>", opts)
+
 -- Open File Explorer
 keymap("n", "<leader>e", ":call ToggleNetrw()<CR>", opts)
 keymap("n", "<leader>E", ":NvimTreeToggle<CR>", opts)

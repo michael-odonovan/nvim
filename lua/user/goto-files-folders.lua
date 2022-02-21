@@ -1,8 +1,7 @@
 vim.cmd([[
 
-map <leader>, :e ~/.config/nvim/<CR>
-
 " Latest project
+:command! Init :e ~/.confi/nvim/init.lua
 :command! Project :e ~/RbcMobilityNextJs
 :command! Blog :e ~/Blog
 
