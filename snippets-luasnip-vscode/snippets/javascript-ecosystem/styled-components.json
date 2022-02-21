@@ -43,7 +43,7 @@
       "  breakPoint=\"600px\"",
       "  src=\"/${1}.jpg\"",
       "  alt=\"${2}\"",
-      "  objectPosition=\"cover\"",
+      "  objectPositionMobile=\"50%\"",
       ">",
       "  <HeroTint></HeroTint>",
       "  <HeroBorder></HeroBorder>",
