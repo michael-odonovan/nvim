@@ -58,6 +58,7 @@ return packer.startup(function(use)
   use "mattn/emmet-vim" -- <TAB>
 
   -- general
+  use 'tpope/vim-vinegar' -- improves netrw
   use 'norcalli/nvim-colorizer.lua' -- css color previews
   use "vim-scripts/loremipsum" -- :Loremipsum [wordcount]
   use "wbthomason/packer.nvim" -- Have packer manage itself

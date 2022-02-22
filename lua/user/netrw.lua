@@ -15,8 +15,16 @@ endfunc
 " deletes netrw's buffer once it's hidden (using ':q', for example)
 autocmd FileType netrw setl bufhidden=delete
 
-" AutoOpen NetRW if vim called without parameters i.e. vim augroup
-" netrw-auto-open-if-no-params autocmd!  autocmd VimEnter * if argc() == 0 |
-" Explore! | endif augroup END
+" open netrw if vim called without parameters
+augroup auto-open-netrw
+	autocmd!
+  autocmd VimEnter * 
+      \  if argc() == 0 |
+      \  Explore! | 
+      \  endif 
+augroup END
+
+" This overides the vim-vinegar disdain for the banner at the top, why? It centres the files on the page more often than not.
+let g:netrw_banner = 1
 
 ]])
