@@ -39,6 +39,6 @@ luac.out
 *.x86_64
 *.hex
 
-undo-directory/**/*
+undo-directory/
 plugin/packer_compiled.lua
 
