@@ -13,19 +13,19 @@ vim.cmd([[
 " :Fold
 function! Fold()
 	if &ft ==# "markdown"
-		:-1read ~/Coding/my-folds/md-fold.md | execute "normal! zoell" | startinsert
+		execute "normal! o" | :-1read ~/.config/nvim/my-folds/md-fold.md | execute "normal! zojj" | startinsert
 	elseif &ft ==# "html"
-		:-1read ~/Coding/my-folds/html-fold.html | execute "normal! zoell" | startinsert
+		:-1read ~/.config/nvim/my-folds/html-fold.html | execute "normal! zoell" | startinsert
 	elseif &ft ==# "javascript"
-		:-1read ~/Coding/my-folds/javascript-fold.js | execute "normal! zoell" | startinsert
+		:-1read ~/.config/nvim/my-folds/javascript-fold.js | execute "normal! zoell" | startinsert
 	elseif &ft ==# "css"
-		:-1read ~/Coding/my-folds/css-fold.css | execute "normal! zof>ll" | startinsert
+		:-1read ~/.config/nvim/my-folds/css-fold.css | execute "normal! zof>ll" | startinsert
 	elseif &ft ==# "scss"
-		:-1read ~/Coding/my-folds/css-fold.css | execute "normal! zof>ll" | startinsert
+		:-1read ~/.config/nvim/my-folds/css-fold.css | execute "normal! zof>ll" | startinsert
 	elseif &ft ==# "vim"
-		:-1read ~/Coding/my-folds/vim-fold.vim | execute "normal! zoell" | startinsert
+		:-1read ~/.config/nvim/my-folds/vim-fold.vim | execute "normal! zoell" | startinsert
 	elseif &ft ==# "tmux"
-		:-1read ~/Coding/my-folds/vim-fold.vim | execute "normal! zoell" | startinsert
+		:-1read ~/.config/nvim/my-folds/vim-fold.vim | execute "normal! zoell" | startinsert
 	endif
 endfunction
 command! Fold :call Fold()
