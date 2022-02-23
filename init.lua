@@ -30,4 +30,5 @@ require "user.plugin-settings.project"
 require "user.plugin-settings.telescope"
 require "user.plugin-settings.toggleterm"
 require "user.plugin-settings.treesitter"
+require "user.plugin-settings.vim-fugitive"
 

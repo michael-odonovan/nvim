@@ -44,7 +44,7 @@ return packer.startup(function(use)
   -- colorscheme
   use "EdenEast/nightfox.nvim"
 
-  -- better editing of quickfix window
+  -- better editing of quickfix window for global search and replace
   use 'stefandtw/quickfix-reflector.vim'
 
   -- Zen mode
@@ -58,7 +58,9 @@ return packer.startup(function(use)
   use "mattn/emmet-vim" -- <TAB>
 
   -- general
+  use 'kyazdani42/nvim-web-devicons' -- icons for folders etc
   use 'tpope/vim-fugitive' -- git vim wrapper
+  use 'rbong/vim-flog' -- git branch viewer for fugitive
   use 'tpope/vim-vinegar' -- improves netrw
   use 'norcalli/nvim-colorizer.lua' -- css color previews
   use "vim-scripts/loremipsum" -- :Loremipsum [wordcount]
