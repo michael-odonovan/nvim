@@ -1,4 +1,4 @@
-vim.cmd [[
+vim.cmd([[
 
 augroup _general_settings
   autocmd!
@@ -9,7 +9,7 @@ augroup _general_settings
 augroup end
 
 
-" when resizeing entire window, keep splits even size
+" when resizing entire window, keep splits even size
 augroup _auto_resize
   autocmd!
     autocmd VimResized * wincmd =
@@ -36,5 +36,5 @@ augroup automkdir
 				\ endif
 augroup END
 
-]]
+]])
 

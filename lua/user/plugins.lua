@@ -58,6 +58,7 @@ return packer.startup(function(use)
   use "mattn/emmet-vim" -- <TAB>
 
   -- general
+  use 'tpope/vim-fugitive' -- git vim wrapper
   use 'tpope/vim-vinegar' -- improves netrw
   use 'norcalli/nvim-colorizer.lua' -- css color previews
   use "vim-scripts/loremipsum" -- :Loremipsum [wordcount]
