@@ -50,6 +50,18 @@ return packer.startup(function(use)
   -- Zen mode
   use 'junegunn/goyo.vim'
 
+  -- Git
+  use 'tpope/vim-fugitive' -- git vim wrapper
+  use 'rbong/vim-flog' -- git branch viewer for fugitive
+  use {
+    'lewis6991/gitsigns.nvim',
+    requires = {
+      'nvim-lua/plenary.nvim'
+    },
+    config = function()
+      require('gitsigns').setup()
+    end
+  }
   -- improved text editing
   use "tpope/vim-commentary" -- Easily comment stuff
   use "tpope/vim-repeat" -- makes it able to to repeat vim-surround functions
@@ -60,8 +72,6 @@ return packer.startup(function(use)
   -- general
   use 'vimwiki/vimwiki' -- vimwiki
   use 'kyazdani42/nvim-web-devicons' -- icons for folders etc
-  use 'tpope/vim-fugitive' -- git vim wrapper
-  use 'rbong/vim-flog' -- git branch viewer for fugitive
   use 'tpope/vim-vinegar' -- improves netrw
   use 'norcalli/nvim-colorizer.lua' -- css color previews
   use "vim-scripts/loremipsum" -- :Loremipsum [wordcount]
@@ -95,7 +105,6 @@ return packer.startup(function(use)
   use "saadparwaiz1/cmp_luasnip" -- integration with cmp completion engine
   use "L3MON4D3/LuaSnip" -- snippet engine
 
-
   -- LSP
   use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
@@ -112,9 +121,6 @@ return packer.startup(function(use)
   }
   use "nvim-treesitter/playground"
   use "JoosepAlviste/nvim-ts-context-commentstring"
-
-  -- Git
-  use "lewis6991/gitsigns.nvim"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
