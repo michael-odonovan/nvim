@@ -1,11 +1,15 @@
 vim.cmd([[
 
 " Latest project
-:command! Init :e ~/.confi/nvim/init.lua
 :command! Project :e ~/RbcMobilityNextJs
-:command! Blog :e ~/Blog
 
-:command! Snippets :e ~/.config/nvim/snippets-luasnip-vs-code
+" open init.lua
+:command! Init :e ~/.config/nvim/init.lua
+
+" open Snippets folder
+:command! Snippets :e ~/.config/nvim/snippets-luasnip-vscode
+
+:command! Blog :e ~/Blog
 :command! Learning :e ~/Learning
 :command! Scratch :e ~/CodingNotes/scratch.md
 :command! Bashrc :e ~/.bashrc
