@@ -69,7 +69,7 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim" -- Useful lua functions used by lots of plugins
   use "moll/vim-bbye" -- about deleting buffers ???
   use "AndrewRadev/tagalong.vim" -- change html tag names
-  use 'davidgranstrom/nvim-markdown-preview' -- :MardownPreview
+  use 'davidgranstrom/nvim-markdown-preview' -- :MarkdownPreview
 -- node dependencies: live-server, pandoc
 -- code syntax highlighting inside markdown is built into vim, there are settings in ____ for this.
   use "nvim-lualine/lualine.nvim"
