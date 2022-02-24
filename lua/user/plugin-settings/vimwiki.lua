@@ -5,22 +5,24 @@ let g:vimwiki_markdown_link_ext = 1
 
 nmap <Leader>00 <Plug>VimwikiIndex
 
-hi VimwikiHeader1 guifg=#d67ad2
-hi VimwikiHeader2 guifg=#81b29a
-hi VimwikiHeader3 guifg=#9d79d6
-
-hi VimwikiLink guifg=#719cd6 gui=underline
-
 " from nightfox colorscheme:
-" black      = "#393b44",
-" red        = "#c94f6d",
-" green      = "#81b29a",
-" yellow     = "#dbc074",
-" blue       = "#719cd6",
-" magenta    = "#9d79d6",
-" cyan       = "#63cdcf",
-" white      = "#dfdfe0",
-" orange     = "#f4a261",
-" pink       = "#d67ad2",
+let black      = "#393b44"
+let red        = "#c94f6d"
+let green      = "#81b29a"
+let yellow     = "#dbc074"
+let blue       = "#719cd6"
+let magenta    = "#9d79d6"
+let cyan       = "#63cdcf"
+let white      = "#dfdfe0"
+let orange     = "#f4a261"
+let pink       = "#d67ad2"
+
+hi VimwikiHeader1 guifg=magenta
+hi VimwikiHeader2 guifg=cyan
+hi VimwikiHeader3 guifg=pink
+
+hi VimwikiLink guifg=cyan gui=underline
+hi VimwikiListTodo guifg=magenta
+
 
 ]])

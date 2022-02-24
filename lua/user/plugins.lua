@@ -73,7 +73,10 @@ return packer.startup(function(use)
   use 'davidgranstrom/nvim-markdown-preview' -- :MarkdownPreview
 -- node dependencies: live-server, pandoc
 -- code syntax highlighting inside markdown is built into vim, there are settings in ____ for this.
-  use "nvim-lualine/lualine.nvim"
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
   use "akinsho/toggleterm.nvim"
   use "lukas-reineke/indent-blankline.nvim"
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
@@ -107,6 +110,7 @@ return packer.startup(function(use)
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
   }
+  use "nvim-treesitter/playground"
   use "JoosepAlviste/nvim-ts-context-commentstring"
 
   -- Git
