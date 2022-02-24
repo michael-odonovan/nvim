@@ -58,6 +58,7 @@ return packer.startup(function(use)
   use "mattn/emmet-vim" -- <TAB>
 
   -- general
+  use 'lervag/wiki.vim' -- vimwiki
   use 'kyazdani42/nvim-web-devicons' -- icons for folders etc
   use 'tpope/vim-fugitive' -- git vim wrapper
   use 'rbong/vim-flog' -- git branch viewer for fugitive
