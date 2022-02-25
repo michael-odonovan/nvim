@@ -12,7 +12,7 @@ require "user.macros"
 require "user.nvim-terminals"
 require "user.netrw"
 require "user.options"
-require "user.plugins"
+require                   "user.plugins"
 
 -- plugin settings =============================
 require "user.plugin-settings.autopairs"

@@ -14,11 +14,9 @@ nightfox.setup({
   },
   hlgroups = {
     Folded = { fg = "c.blue", bg = "c.bg" }, -- line used for closed folds
-    markdownH1 = { fg = "${blue}", style = "bold" },
-    markdownH2 = { fg = "${green}", style = "bold" },
-    htmlH3 = { fg = "${magenta}", style = "bold" },
-    htmlH4 = { fg = "${yellow}", style = "bold" },
-    htmlH5 = { fg = "${red}", style = "bold" },
+
+    -- Note: Markdown headings are now controlled by vimwiki settings!
+
   }
 })
 
