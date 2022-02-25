@@ -1,13 +1,23 @@
 # Converting to Lua, about 90% there, : )
 ## Usage Notes:
 
-## Installing Lanuage Servers
--- you need to install language servers manually on your machine using npm
--- e.g. npm install typescript-language-server
--- :LspInstallInfo
+## check general health of nvim setup:
+- :checkhealth
+
+## Main Features
+- native Lsp for coding errors
+- formatter.nvim plugin for formatting with :Format and on save
+- cmp/luasnip for completion and snippets
+- see below for general setup for a new language
+
+## Installing Language Servers
+-- you need to install language servers binarys manually on your machine using npm or cargo (needs rust installed)
+-- e.g. cargo install stylua
+-- :LspInstallInfo to see installed language servers
 -- press "i" on servers that I want
 -- wait for it to install, quit out of window
 -- gl = diagnostics
+-- to attach to language servers you need to have the node/neovim packkage installed (already in NewInstall scripts)
 
 ## Global Search and Replace with Telescope and quickfix-reflector plugin
 - <C-g> = Telescope live_grep
@@ -25,26 +35,4 @@
 
 ## Emmet
 - <Tab>
-have commented this out for now, as using html snippets 
-
-
-- check nvim health
-  ```
-  :checkhealth
-  ```
-
-- Fix copy and paste? On Ubuntu
-  ```
-  sudo apt install xsel
-  ```
-
-- Neovim python support
-  ```
-  pip install pynvim
-  ```
-
-- Neovim node support
-  ```
-  npm i -g neovim
-  ```
 
