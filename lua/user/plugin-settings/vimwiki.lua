@@ -17,12 +17,13 @@ let white      = "#dfdfe0"
 let orange     = "#f4a261"
 let pink       = "#d67ad2"
 
-hi VimwikiHeader1 guifg=magenta
-hi VimwikiHeader2 guifg=cyan
-hi VimwikiHeader3 guifg=pink
+" Can't use variables in syntax highlights
+hi VimwikiHeader1 guifg=#c94f6d
+hi VimwikiHeader2 guifg=#719cd6
+hi VimwikiHeader3 guifg=#f4a261
 
-hi VimwikiLink guifg=cyan gui=underline
-hi VimwikiListTodo guifg=magenta
+hi VimwikiLink guifg=#719cd6 gui=underline
+hi VimwikiListTodo guifg=#81b29a
 
 
 ]])
