@@ -1,5 +1,8 @@
--- :LspInstallInf
+-- you need to install language servers manually on your machine using npm
+-- e.g. npm install typescript-language-server
+-- :LspInstallInfo
 -- press "i" on servers that I want
+-- wait for it to install, quit out of window
 -- gl = diagnostics
 
 local status_ok, _ = pcall(require, "lspconfig")
@@ -10,3 +13,4 @@ end
 require "user.lsp.lsp-installer"
 require("user.lsp.handlers").setup()
 require "user.lsp.null-ls"
+
