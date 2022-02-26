@@ -9,6 +9,8 @@
 -- Keys
 --   C = ctrl, A = alt, S = shift
 
+-- NOTE: language server keymaps are in /lsp/handlers.lua
+
 local opts = { noremap = true, silent = true }
 local term_opts = { silent = true }
 

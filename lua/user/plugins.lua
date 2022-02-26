@@ -40,7 +40,6 @@ packer.init({
 
 -- Install your plugins here
 return packer.startup(function(use)
-
 	use("wbthomason/packer.nvim")
 
 	-- colorscheme
@@ -113,7 +112,7 @@ return packer.startup(function(use)
 
 	-- LSP
 	use("neovim/nvim-lspconfig") -- enable LSP
-	use("williamboman/nvim-lsp-installer") -- simple to use language server installer
+	use("williamboman/nvim-lsp-installer") -- setups the easy user installer with the pop up window
 	use("tamago324/nlsp-settings.nvim") -- language server settings defined in json for
 	use("jose-elias-alvarez/nvim-lsp-ts-utils") -- as above
 	-- formatting:
