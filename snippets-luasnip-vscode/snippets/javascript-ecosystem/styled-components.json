@@ -5,7 +5,7 @@
       "const ${1} = styled.${2:div}`",
       "  ${3}",
       "`",
-      "${0}<${1}>",
+      "<${1}>",
       "</${1}>"
     ],
     "description": ""
@@ -19,7 +19,7 @@
       "  transform: skewY(5deg);",
       "  z-index: 100;",
       "`",
-      "${0}<SlantedDiv></SlantedDiv>"
+      "<SlantedDiv></SlantedDiv>"
     ],
     "description": ""
   },
@@ -30,7 +30,7 @@
       "  margin-top: -8vw;",
       "  transform: skewY(-6deg);",
       "`",
-      "${0}<SlantedDiv2></SlantedDiv2>"
+      "<SlantedDiv2></SlantedDiv2>"
     ],
     "description": "slanted div 2"
   },
@@ -53,20 +53,20 @@
     "description": ""
   },
   "Styled Component Hero Text": {
-  "prefix": "hero text",
-  "body": [
-    "const HeroText = styled.h1`",
-    "  z-index: 100;",
-    "  color: var(--white);",
-    "  grid-row: 9;",
-    "  grid-column: 21;",
-    "  font-size: calc(12px + 3.5vw);",
-    "  font-family: Montserrat;",
-    "  letter-spacing: 0.1em;",
-    "  text-align: center;",
-    "`"
-  ],
-  "description": "Styled Component Hero Text"
+    "prefix": "hero text",
+    "body": [
+      "const HeroText = styled.h1`",
+      "  z-index: 100;",
+      "  color: var(--white);",
+      "  grid-row: 9;",
+      "  grid-column: 21;",
+      "  font-size: calc(12px + 3.5vw);",
+      "  font-family: Montserrat;",
+      "  letter-spacing: 0.1em;",
+      "  text-align: center;",
+      "`"
+    ],
+    "description": "Styled Component Hero Text"
   },
   "HeroTint Styled Component": {
     "prefix": "hero tint",

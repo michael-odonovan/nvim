@@ -14,7 +14,8 @@
       {
         "language": [
           "javascriptreact",
-          "typescriptreact"
+          "typescriptreact",
+          "javascript"
         ],
         "path": "./snippets/javascript-ecosystem/imports.json"
       },
@@ -38,7 +39,8 @@
       {
         "language": [
           "javascriptreact",
-          "typescriptreact"
+          "typescriptreact",
+          "javascript"
         ],
         "path": "./snippets/javascript-ecosystem/styled-components.json"
       },
@@ -60,4 +62,3 @@
     ]
   }
 }
-

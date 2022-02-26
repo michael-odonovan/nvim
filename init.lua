@@ -1,7 +1,7 @@
 -- gd = go to
 
--- load in everything in the lsp folder ==============================
-require             ("user.lsp")
+-- load lsp =============================
+require("user.lsp")
 
 -- basics ============================
 require("user.autocommands")

@@ -15,15 +15,13 @@ local term_opts = { silent = true }
 -- Shorten function name
 local keymap = vim.api.nvim_set_keymap
 
-
 -- Leader Key ============================================
 keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
-
 -- Normal Mode ============================================
-keymap("n", "<leader>,", ":e ~/.config/nvim/init.lua<CR>", opts)
+keymap("n", "<leader>,", ":e ~/.config/nvim/init.lua<CR>'\"", opts)
 
 -- Open File Explorer
 keymap("n", "<leader>e", ":call ToggleNetrw()<CR>", opts)
@@ -33,8 +31,10 @@ keymap("n", "<leader>E", ":NvimTreeToggle<CR>", opts)
 keymap("n", "<leader>d", ":vsp<CR>", opts)
 
 -- Tabs
--- open a new tab in the current directory, which because no file is called, will mean opening netrw
-keymap("n", "<leader>t", ":tabnew %:p:h<CR>", opts)
+-- open a new tab with netrw open
+-- keymap("n", "<leader>t", ":tabnew %:p:h<CR>", opts)
+-- open a new tab with same file open and cursor position
+keymap("n", "<leader>t", ":tabnew %<CR>'\"", opts)
 keymap("n", "<leader>l", ":tabn<CR>", opts)
 keymap("n", "<leader>h", ":tabp<CR>", opts)
 
@@ -42,7 +42,7 @@ keymap("n", "<leader>h", ":tabp<CR>", opts)
 keymap("n", "<leader>b", ":new|:term<CR>", opts)
 
 -- Saving/Exiting
-keymap("n", "<leader>w", ":wa<CR>", opts)
+keymap("n", "<C-s>", ":wa<CR>", opts)
 keymap("n", "<C-d>", ":q!<CR>", opts)
 keymap("n", "<esc>", ":silent! nohls<CR>", opts)
 
@@ -105,7 +105,7 @@ keymap("v", "<A-k>", ":m .-2<CR>==", opts)
 keymap("v", "p", '"_dP', opts)
 
 -- Search for visually selected text with //
-keymap("v", "//", "y/\\V<C-R>=escape(@\",'/\')<CR><CR>", opts)
+keymap("v", "//", "y/\\V<C-R>=escape(@\",'/')<CR><CR>", opts)
 
 -- Visual Block Mode ================================
 -- Move text up and down
@@ -114,11 +114,9 @@ keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
-
 -- Terminal Mode ==================================
 -- Better terminal navigation
 keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
 keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
 keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
-

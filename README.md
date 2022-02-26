@@ -11,13 +11,22 @@
 - see below for general setup for a new language
 
 ## Installing Language Servers
--- you need to install language servers binarys manually on your machine using npm or cargo (needs rust installed)
+-- you need to install language servers binaries manually on your machine using npm or cargo (needs rust installed) for the formatting.
 -- e.g. cargo install stylua
 -- :LspInstallInfo to see installed language servers
 -- press "i" on servers that I want
 -- wait for it to install, quit out of window
+-- Then in the file/filetype eg. mySite.css you need to :LspInstall and choose which language server for that file type.
 -- gl = diagnostics
--- to attach to language servers you need to have the node/neovim packkage installed (already in NewInstall scripts)
+-- also to attach to language servers you need to have the node/neovim packkage installed (already in NewInstall scripts)
+-- if you need to get more info about each language server and what binary to install, there is is infor in the lsp-config repo:
+https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#cssls
+-- so yeah quite a hoohah..
+
+## Any issues with Packer?
+- delete file: ~/.config/nvim/plugin/packer-compiled.lau
+- delete folder: ~/.local/share/nvim/site/pack/packer/start/packer
+- then reinstall.
 
 ## Global Search and Replace with Telescope and quickfix-reflector plugin
 - <C-g> = Telescope live_grep
