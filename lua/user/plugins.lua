@@ -65,8 +65,9 @@ return packer.startup(function(use)
 	})
 	-- improved text editing
 	use("tpope/vim-commentary") -- Easily comment stuff
-	use("tpope/vim-repeat") -- makes it able to to repeat vim-surround functions
 	use("tpope/vim-surround") -- surround text with tags etc.
+	use("tpope/vim-repeat") -- makes it able to to repeat vim-surround functions
+	use("AndrewRadev/tagalong.vim") -- change inside html tags
 	use("windwp/nvim-autopairs") -- Autopairs, integrates with both cmp and treesitter
 	use("mattn/emmet-vim") -- <TAB>
 
@@ -80,7 +81,6 @@ return packer.startup(function(use)
 	use("nvim-lua/popup.nvim") -- An implementation of the Popup API from vim in Neovim
 	use("nvim-lua/plenary.nvim") -- Useful lua functions used by lots of plugins
 	use("moll/vim-bbye") -- about deleting buffers ???
-	use("AndrewRadev/tagalong.vim") -- change html tag names
 	use("davidgranstrom/nvim-markdown-preview") -- :MarkdownPreview
 	-- node dependencies: live-server, pandoc
 	-- code syntax highlighting inside markdown is built into vim, there are settings in ____ for this.
@@ -95,7 +95,6 @@ return packer.startup(function(use)
 	use("akinsho/toggleterm.nvim")
 	use("lukas-reineke/indent-blankline.nvim")
 	use("antoinemadec/FixCursorHold.nvim") -- This is needed to fix lsp doc highlight
-	use("ahmedkhalf/project.nvim") -- for project management
 	use("lewis6991/impatient.nvim") -- helps load nvim lua files quicker
 
 	-- cmp plugins
