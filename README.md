@@ -6,10 +6,12 @@ Minimal bling, just the essentials for front end development (typescript, nextjs
 
 - diagnostics with native Lsp
 - syntax highlighting with treesitter
-- formatting with null-ls
+- formatting with null-ls plugin
 - snippets with cmp and luasnip, plus folder of custom snippets
-- git integration with vim-fugitive and vim-flog
-- emmet
+- git integration with vim-fugitive and vim-flog plugins
+- html completion with emmet plugin
+- global search and replace with quickfix-reflector plugin
+- global error collection with Trouble plugin
 
 ## Usage Notes:
 
