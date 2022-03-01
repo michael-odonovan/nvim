@@ -45,7 +45,7 @@ return packer.startup(function(use)
 	-- colorscheme
 	use("EdenEast/nightfox.nvim")
 
-	-- better editing of quickfix window for global search and replace
+	-- makes quickfix window writable for global search and replace
 	use("stefandtw/quickfix-reflector.vim")
 
 	-- Zen mode

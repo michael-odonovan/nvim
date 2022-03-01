@@ -25,6 +25,9 @@ vim.g.maplocalleader = " "
 -- Normal Mode ============================================
 keymap("n", "<leader>,", ":e ~/.config/nvim/init.lua<CR>'\"", opts)
 
+-- go to definition in a new tab
+keymap("n", "gad", "<cmd>tab split | lua vim.lsp.buf.definition()<CR>", opts)
+
 -- Open File Explorer
 keymap("n", "<leader>e", ":call ToggleNetrw()<CR>", opts)
 keymap("n", "<leader>E", ":NvimTreeToggle<CR>", opts)
@@ -36,7 +39,7 @@ keymap("n", "<leader>d", ":vsp<CR>", opts)
 -- open a new tab with netrw open
 -- keymap("n", "<leader>t", ":tabnew %:p:h<CR>", opts)
 -- open a new tab with same file open and cursor position
-keymap("n", "<leader>t", ":tabnew %<CR>'\"", opts)
+keymap("n", "<leader>t", "mm:tabnew %<CR>`m", opts)
 keymap("n", "<leader>l", ":tabn<CR>", opts)
 keymap("n", "<leader>h", ":tabp<CR>", opts)
 
