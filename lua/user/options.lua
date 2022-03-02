@@ -7,7 +7,7 @@ local wo = vim.wo
 local bo = vim.bo
 
 vim.cmd([[ set undodir=~/.config/nvim/undo-directory ]])
-o.autochdir = true --> creates problems with telescope
+-- o.autochdir = true --> creates problems with telescope
 o.fileencoding = "utf-8" -- the encoding written to a file
 o.clipboard = "unnamedplus" -- allows neovim to access the system clipboard
 o.mouse = "a" -- allow the mouse to be used in neovi
