@@ -9,6 +9,7 @@ vim.cmd([[
 " open Snippets folder
 :command! Snippets :e ~/.config/nvim/snippets-luasnip-vscode
 
+:command! Coding :e ~/Wiki/Coding-Notes.md
 :command! Blog :e ~/Blog
 :command! Learning :e ~/Learning
 :command! Scratch :e ~/CodingNotes/scratch.md

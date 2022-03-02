@@ -25,6 +25,6 @@ augroup auto-open-netrw
 augroup END
 
 " This overides the vim-vinegar disdain for the banner at the top, why? It centres the files on the page more often than not.
-let g:netrw_banner = 1
+" let g:netrw_banner = 1
 
 ]])
