@@ -17,9 +17,10 @@ let g:nested_syntaxes = {'ts': 'typescript', 'py': 'python', 'js': 'javascript',
 " let pink       = "#d67ad2"
 
 " Can't use variables in syntax highlights
-hi VimwikiHeader1 guifg=#c94f6d
-hi VimwikiHeader2 guifg=#f4a261
-hi VimwikiHeader3 guifg=#9d79d6
+hi VimwikiHeader1 guifg=#ffff00
+hi VimwikiHeader2 guifg=#ffff00
+hi VimwikiHeader3 guifg=#ffff00
+hi VimwikiHeader4 guifg=#ffff00
 
 hi VimwikiLink guifg=#719cd6 gui=underline
 hi VimwikiListTodo guifg=#81b29a
