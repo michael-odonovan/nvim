@@ -2,7 +2,7 @@ vim.cmd([[
 
 let g:vimwiki_list = [{'path':'~/Wiki', 'syntax': 'markdown', 'ext': '.md'}]
 let g:vimwiki_markdown_link_ext = 1
-let g:nested_syntaxes = {'ts': 'typescript', 'py': 'python', 'js': 'javascript', 'html': 'html', 'css': 'css', 'sh': 'sh'}
+let g:nested_syntaxes = {'typescript': 'typescript', 'py': 'python', 'javascript': 'javascript', 'javascriptreact': 'javascriptreact', 'typescriptreact': 'typescriptreact', 'html': 'html', 'css': 'css', 'sh': 'sh'}
 
 " from nightfox colorscheme:
 " let black      = "#393b44"
@@ -20,7 +20,7 @@ let g:nested_syntaxes = {'ts': 'typescript', 'py': 'python', 'js': 'javascript',
 hi VimwikiHeader1 guifg=#ff0000
 hi VimwikiHeader2 guifg=#ffff00
 hi VimwikiHeader3 guifg=#ff00ff
-hi VimwikiHeader4 guifg=#0000ff
+hi VimwikiHeader4 guifg=#00ff
 
 hi VimwikiLink guifg=#719cd6 gui=underline
 hi VimwikiListTodo guifg=#81b29a

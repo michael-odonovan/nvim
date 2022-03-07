@@ -1,17 +1,17 @@
 vim.cmd([[
 
 " Folders
-command! Project cd ~/RbcMobilityNextJs | :Ex
+command! Cn :e ~/CodingNotes
+command! Project :e ~/RbcMobilityNextJs
 command! Init cd ~/.config/nvim | :e init.lua
 command! Wiki cd ~/Wiki | :e index.md
-command! Cn cd ~/CodingNotes | :Ex
-command! Snippets cd ~/.config/nvim/snippets-luasnip-vscode | :Ex
-command! Blog cd ~/Blog | :Ex
-command! Notes cd ~/NotesGeneral | :Ex
-command! Documents cd ~/Documents | :Ex
-command! Scripts cd ~/bin | :Ex
-command! Desk cd ~/Desktop | :Ex
-command! Downloads cd ~/Downloads | :Ex
+command! Snippets :e ~/.config/nvim/snippets-luasnip-vscode
+command! Blog :e ~/Blog
+command! Notes :e ~/NotesGeneral
+command! Documents :e ~/Documents
+command! Scripts :e ~/bin
+command! Desk :e ~/Desktop
+command! Downloads :e ~/Downloads
 
 " Files
 command! Scratch :e ~/scratch.md
