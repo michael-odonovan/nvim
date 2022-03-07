@@ -15,6 +15,12 @@ function! Wiki()
 endfunction
 command! Wiki :call Wiki()
 
+function! Cn()
+  cd ~/CodingNotes
+  :Ex
+endfunction
+command! Cn :call Cn()
+
 command! Wiki :call Wiki()
 :command! Coding :e ~/Wiki/Coding-Notes.md
 :command! Blog :e ~/Blog
@@ -22,7 +28,6 @@ command! Wiki :call Wiki()
 :command! Scratch :e ~/CodingNotes/scratch.md
 :command! Bashrc :e ~/.bashrc
 :command! Source :source ~/.config/nvim/init.lua
-:command! Cn :e ~/CodingNotes
 :command! Cf :e ~/Coding
 :command! Notes :e ~/Documents/notes-general
 :command! Documents :e ~/Documents
