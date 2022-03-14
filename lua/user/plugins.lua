@@ -80,7 +80,6 @@ return packer.startup(function(use)
 	use("wbthomason/packer.nvim") -- Have packer manage itself
 	use("nvim-lua/popup.nvim") -- An implementation of the Popup API from vim in Neovim
 	use("nvim-lua/plenary.nvim") -- Useful lua functions used by lots of plugins
-	use("moll/vim-bbye") -- about deleting buffers ???
 	use("davidgranstrom/nvim-markdown-preview") -- :MarkdownPreview
 	-- node dependencies: live-server, pandoc
 	-- code syntax highlighting inside markdown is built into vim, there are settings in ____ for this.

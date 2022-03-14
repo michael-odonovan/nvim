@@ -1,7 +1,7 @@
 vim.cmd([[
 
 " Folders
-command! Cn :e ~/CodingNotes
+command! Cn :e ~/CodingNotes | :cd %:h
 command! Project :e ~/RbcMobilityNextJs
 command! Init cd ~/.config/nvim | :e init.lua
 command! Wiki cd ~/Wiki | :e index.md
