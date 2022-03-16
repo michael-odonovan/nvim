@@ -8,6 +8,7 @@ local formatting = null_ls.builtins.formatting
 null_ls.setup({
 	debug = false,
 	sources = {
+		-- formatting.prettier.with({ extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" } }),
 		formatting.prettier,
 		formatting.black,
 		formatting.stylua,
@@ -17,7 +18,8 @@ null_ls.setup({
 			vim.cmd([[
         augroup LspFormatting
           autocmd! * <buffer>
-          autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync(nil, 2000)
+          " autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync(nil, 2000)
+          autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_seq_sync(nil, 2000)
         augroup END
       ]])
 		end
