@@ -23,5 +23,21 @@
       "}"
     ],
     "description": "Typescipt Functional Component with Interface (that needs to be moved above)"
+  },
+  "useEffect Hook": {
+    "prefix": "ue",
+    "body": [
+      "useEffect(() => {",
+      "  ${2}",
+      "}, [${1}];"
+    ],
+    "description": "useEffect Hook"
+  },
+  "import useState/useEffect": {
+    "prefix": "ir",
+    "body": [
+      "import { ${1} } from 'react'"
+    ],
+    "description": "import useState/useEffect"
   }
 }
