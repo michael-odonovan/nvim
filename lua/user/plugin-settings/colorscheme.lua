@@ -22,6 +22,5 @@ nightfox.setup({
 
 vim.cmd("colorscheme nightfox")
 
-local pallet = require("nightfox.pallet").load("nightfox")
-
-print(vim.inspect(pallet.red))
+-- local pallet = require("nightfox.pallet").load("nightfox")
+-- print(vim.inspect(pallet.bg))
