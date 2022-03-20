@@ -29,7 +29,7 @@
     "body": [
       "useEffect(() => {",
       "  ${2}",
-      "}, [${1}];"
+      "}, [${1}]);"
     ],
     "description": "useEffect Hook"
   },
@@ -39,5 +39,14 @@
       "import { ${1} } from 'react'"
     ],
     "description": "import useState/useEffect"
+  },
+  "fragment": {
+    "prefix": "<>",
+    "body": [
+      "<>",
+      "  ${1}",
+      "</>"
+    ],
+    "description": "fragment"
   }
 }
