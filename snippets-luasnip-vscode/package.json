@@ -33,7 +33,8 @@
         "language": [
           "javascript",
           "javascriptreact",
-          "typescriptreact"
+          "typescriptreact",
+          "html"
         ],
         "path": "./snippets/javascript-ecosystem/javascript-vanilla.json"
       },
