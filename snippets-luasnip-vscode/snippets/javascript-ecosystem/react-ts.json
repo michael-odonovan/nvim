@@ -28,7 +28,9 @@
     "prefix": "ue",
     "body": [
       "useEffect(() => {",
+      "return (",
       "  ${2}",
+      ")",
       "}, [${1}]);"
     ],
     "description": "useEffect Hook"
