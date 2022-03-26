@@ -82,7 +82,7 @@ return packer.startup(function(use)
 	use("nvim-lua/plenary.nvim") -- Useful lua functions used by lots of plugins
 	use("davidgranstrom/nvim-markdown-preview") -- :MarkdownPreview
 	-- node dependencies: live-server, pandoc
-	-- code syntax highlighting inside markdown is built into vim, there are settings in ____ for this.
+	-- code syntax highlighting inside markdown is built into vim, there are settings in vimwiki config for this.
 	use({
 		"nvim-lualine/lualine.nvim",
 		requires = { "kyazdani42/nvim-web-devicons", opt = true },
