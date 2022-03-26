@@ -11,7 +11,7 @@
     "description": "React Functional Component"
   },
   "Typescript Functional Component": {
-    "prefix": "tsfc",
+    "prefix": "tfc",
     "body": [
       "export default function ${1}({${2}}: ${3}Props) {",
       "  return (",
@@ -41,7 +41,7 @@
     "description": "import useState/useEffect"
   },
   "fragment": {
-    "prefix": "<>",
+    "prefix": "frag",
     "body": [
       "<>",
       "  ${1}",
@@ -58,10 +58,7 @@
       "  Route,",
       "  Link",
       "} from \"react-router-dom\";",
-      "import ${4} from '${5}'",
       "",
-      "export default function ${1}() {",
-      "  return (",
       "    <Router>",
       "      <div>",
       "        <nav>",
@@ -81,10 +78,18 @@
       "          </Route>",
       "        </Switch>",
       "      </div>",
-      "    </Router>",
-      "  );",
-      "}"
+      "    </Router>"
     ],
     "description": "react-router-dom"
+  },
+  "React default arrow function": {
+    "prefix": "raf",
+    "body": [
+      "const ${1} = (${2}) => {",
+      "  ${3}",
+      "}",
+      "export default ${1}"
+    ],
+    "description": "React default arrow function"
   }
 }

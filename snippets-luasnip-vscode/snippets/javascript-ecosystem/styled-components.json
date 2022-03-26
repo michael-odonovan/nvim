@@ -2,13 +2,34 @@
   "Styled Component": {
     "prefix": "sc",
     "body": [
-      "const ${1} = styled.${2:div}`",
+      "const ${1} = styled.${2}`",
       "  ${3}",
-      "`",
-      "<${1}>",
-      "</${1}>"
+      "  \\${(props) =>",
+      "    props.${4} &&",
+      "    css`",
+      "      ${5}",
+      "    `}",
+      "`;",
+      "// !!! don't forget prop in component, also import {css} from sc",
+      ""
     ],
-    "description": ""
+    "description": "styled component typescript"
+  },
+  "Styled Component Typescript": {
+    "prefix": "sct",
+    "body": [
+      "const ${1} = styled.${2}<{ ${3}: ${4} }>`",
+      "  ${5}",
+      "  \\${(props) =>",
+      "    props.${3} &&",
+      "    css`",
+      "      ${7}",
+      "    `}",
+      "`;",
+      "// !!! don't forget prop in component, also import {css} from sc",
+      ""
+    ],
+    "description": "styled component typescript"
   },
   "Slanted Div": {
     "prefix": "slanted div",
