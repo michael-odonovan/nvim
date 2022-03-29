@@ -96,5 +96,16 @@
       "export default ${1}"
     ],
     "description": "React default arrow function"
+  },
+  "arrow function": {
+    "prefix": "af",
+    "body": [
+      "const ${1} = (${2}) => {",
+      "  return (",
+      "    ${3}",
+      "  )",
+      "}"
+    ],
+    "description": "arrow function"
   }
 }
