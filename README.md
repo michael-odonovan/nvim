@@ -1,6 +1,6 @@
 # Neovim Lua Setup
 
-Minimal bling, just the essentials for front end development (typescript, nextjs, styled-components etc.)
+Minimal bling, just the essentials for front end development (React, Typescript, Styled-Components etc.)
 
 ## Main Features:
 
