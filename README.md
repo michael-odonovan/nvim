@@ -21,6 +21,7 @@ Minimal bling, just the essentials for front end development (React, Typescript,
 
 ### Diagnostics:
 
+#### Installing language servers
 - :LspInstallInfo to see installed language servers available for a particular filetype e.g. init.lua = sumneko_lua
 - type `i` to install that server.
 - wait for it to install, quit out of window.
@@ -28,6 +29,11 @@ Minimal bling, just the essentials for front end development (React, Typescript,
 - if you need to get more info about each language server and what binary to install, there is is information in the lsp-config repo:\
   https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#cssls
 - so yeah, a bit of a hoohaah..
+- 
+#### Uninstalling language servers
+- :LspUninstall <server>
+- e.g. :LspUninstall eslint
+
 - `gl` diagnostics
 
 ## Packer plugin manager
