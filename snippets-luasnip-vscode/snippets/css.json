@@ -91,5 +91,43 @@
       "}"
     ],
     "description": "grid with numbers"
+  },
+  "grid with areas": {
+    "prefix": "grid areas",
+    "body": [
+      ".grid-parent {",
+      "  height: 400px;",
+      "  display: grid;",
+      "  grid-template-areas:",
+      "  \"one two\"",
+      "  \"one two\";",
+      "  grid-template-columns: 1fr 1fr;",
+      "  grid-template-rows: 1fr 1fr;",
+      "  justify-items: center;",
+      "  align-items: center;",
+      "}",
+      "",
+      ".grid-child {",
+      "  grid-area: one;",
+      "}"
+    ],
+    "description": "grid with areas"
+  },
+  "background image": {
+    "prefix": "background-image",
+    "body": [
+      "background: url(assets/images/portfolio-girl-laptop.jpg);"
+    ],
+    "description": "background image"
+  },
+  "media query": {
+    "prefix": "@media",
+    "body": [
+      "@media screen and (min-width: ${1}px) {",
+      "  ${2}",
+      "}",
+      ""
+    ],
+    "description": "media query"
   }
 }
