@@ -49,5 +49,13 @@
       "</div>"
     ],
     "description": "gallery grid"
+  },
+  "robots": {
+    "prefix": "robots",
+    "body": [
+      "User-agent: Googlebot-Image",
+      "Disallow: /"
+    ],
+    "description": "robots"
   }
 }
