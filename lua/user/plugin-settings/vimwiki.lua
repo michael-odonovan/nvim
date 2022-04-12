@@ -18,8 +18,8 @@ let g:vimwiki_markdown_link_ext = 1
 " Can't use variables in syntax highlights
 hi VimwikiHeader1 guifg=#ff0000
 hi VimwikiHeader2 guifg=#ffff00
-hi VimwikiHeader3 guifg=#ff00ff
-hi VimwikiHeader4 guifg=#00ff
+hi VimwikiHeader3 guifg=#f4a261
+hi VimwikiHeader4 guifg=#d67ad2
 
 hi VimwikiLink guifg=#719cd6 gui=underline
 hi VimwikiListTodo guifg=#81b29a
