@@ -1,6 +1,6 @@
 vim.cmd([[
 
-let g:vimwiki_list = [{'path':'~/Wiki', 'syntax': 'markdown', 'ext': '.md'}]
+let g:vimwiki_list = [{'path':'~/Repos/Wiki', 'syntax': 'markdown', 'ext': '.md'}]
 let g:vimwiki_markdown_link_ext = 1
 
 " from nightfox colorscheme:

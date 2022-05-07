@@ -4,7 +4,7 @@ vim.cmd([[
 command! Cn :e ~/CodingNotes | :cd %:h
 command! Project :e ~/RbcMobilityNextJs
 command! Init cd ~/.config/nvim | :e init.lua
-command! Wiki cd ~/Wiki | :e index.md
+command! Wiki cd ~/Repos/Wiki | :e index.md
 command! Snippets :e ~/.config/nvim/snippets-luasnip-vscode/snippets/javascript-ecosystem/
 command! Blog :e ~/Blog
 command! Notes :e ~/NotesGeneral
