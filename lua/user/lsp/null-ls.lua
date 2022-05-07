@@ -9,9 +9,10 @@ null_ls.setup({
 	debug = false,
 	sources = {
 		-- formatting.prettier.with({ extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" } }),
-		formatting.prettier,
+		-- formatting.prettier,
 		formatting.black,
 		formatting.stylua,
+		formatting.eslint,
 	},
 	on_attach = function(client)
 		if client.resolved_capabilities.document_formatting then
