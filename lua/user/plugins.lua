@@ -40,10 +40,11 @@ packer.init({
 
 -- Install your plugins here
 return packer.startup(function(use)
-	use("wbthomason/packer.nvim")
+	use("wbthomason/packer.nvim") -- Have packer manage itself
 
-	-- colorscheme
+	-- colorschemes
 	use("EdenEast/nightfox.nvim")
+  use("folke/tokyonight.nvim")
 
 	-- makes quickfix window writable for global search and replace
 	use("stefandtw/quickfix-reflector.vim")
@@ -77,7 +78,6 @@ return packer.startup(function(use)
 	use("tpope/vim-vinegar") -- improves netrw
 	use("norcalli/nvim-colorizer.lua") -- css color previews
 	use("vim-scripts/loremipsum") -- :Loremipsum [wordcount]
-	use("wbthomason/packer.nvim") -- Have packer manage itself
 	use("nvim-lua/popup.nvim") -- An implementation of the Popup API from vim in Neovim
 	use("nvim-lua/plenary.nvim") -- Useful lua functions used by lots of plugins
 	use("davidgranstrom/nvim-markdown-preview") -- :MarkdownPreview
