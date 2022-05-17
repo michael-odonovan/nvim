@@ -54,6 +54,7 @@ return packer.startup(function(use)
 
 	-- Git
 	use("tpope/vim-fugitive") -- git vim wrapper
+	use("tpope/vim-rhubarb") -- make GBrowse work
 	use("rbong/vim-flog") -- git branch viewer for fugitive
 	use({
 		"lewis6991/gitsigns.nvim",
