@@ -15,6 +15,7 @@ command! Init cd ~/.config/nvim | :e init.lua
 command! Snippets :e ~/.config/nvim/snippets-luasnip-vscode/snippets/javascript-ecosystem/
 command! Scratch :e ~/scratch.md
 command! Bashrc :e ~/.bashrc
+command! Zsh :e ~/.zshrc
 command! NewInstall :e ~/.bashrc-new-install
 command! Source :source ~/.config/nvim/init.lua
 
