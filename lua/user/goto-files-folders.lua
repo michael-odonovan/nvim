@@ -25,4 +25,9 @@ command! Desk :e ~/Desktop
 command! Downloads :e ~/Downloads
 command! Documents :e ~/Documents
 
+" Work
+command! CR :e ~/CR 
+command! CL :e ~/CR/component-library/
+command! Cont :e ~/CR/comicrelief-contentful/
+
 ]])
