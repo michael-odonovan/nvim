@@ -52,19 +52,7 @@
           "typescriptreact",
           "javascript"
         ],
-        "path": "./snippets/javascript-ecosystem/next-js.json"
-      },
-      {
-        "language": [
-          "javascriptreact",
-          "typescriptreact",
-          "javascript"
-        ],
         "path": "./snippets/javascript-ecosystem/react-ts.json"
-      },
-      {
-        "language": "json",
-        "path": "./snippets/json.json"
       }
     ]
   }
