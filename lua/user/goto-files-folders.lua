@@ -18,8 +18,11 @@ command! Bashrc :e ~/.bashrc
 command! Zsh :e ~/.zshrc
 command! NewInstall :e ~/.bashrc-new-install
 command! Source :source ~/.config/nvim/init.lua
+command! Grid :e ~/Repos/Wiki/css-flex-grid-cheatsheet.md
+
 
 " Areas
+command! Learning :e ~/Repos/Learning | :cd %:h
 command! Scripts :e ~/bin
 command! Desk :e ~/Desktop
 command! Downloads :e ~/Downloads
