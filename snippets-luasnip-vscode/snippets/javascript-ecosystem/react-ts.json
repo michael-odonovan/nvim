@@ -107,5 +107,19 @@
       "}"
     ],
     "description": "arrow function"
+  },
+  "css-modules": {
+    "prefix": "css-modules",
+    "body": [
+      "<div className={styles.$1}>$2</div>"
+    ],
+    "description": "css-modules"
+  },
+  "className": {
+    "prefix": "className",
+    "body": [
+      "<div className=\"$1\">$2</div>"
+    ],
+    "description": "className"
   }
 }
