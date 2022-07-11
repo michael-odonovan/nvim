@@ -10,27 +10,6 @@ vim.cmd([[
 " turn line into Title Case
 :command! Title :s/\<\(\w\)\(\S*\)/\u\1\L\2/g
 
-" :Fold
-function! Fold()
-	if &ft ==# "markdown"
-		execute "normal! o" | :-1read ~/.config/nvim/my-folds/md-fold.md | execute "normal! zojj" | startinsert
-	elseif &ft ==# "html"
-		:-1read ~/.config/nvim/my-folds/html-fold.html | execute "normal! zoell" | startinsert
-	elseif &ft ==# "javascript"
-		:-1read ~/.config/nvim/my-folds/javascript-fold.js | execute "normal! zoell" | startinsert
-	elseif &ft ==# "css"
-		:-1read ~/.config/nvim/my-folds/css-fold.css | execute "normal! zof>ll" | startinsert
-	elseif &ft ==# "scss"
-		:-1read ~/.config/nvim/my-folds/css-fold.css | execute "normal! zof>ll" | startinsert
-	elseif &ft ==# "vim"
-		:-1read ~/.config/nvim/my-folds/vim-fold.vim | execute "normal! zoell" | startinsert
-	elseif &ft ==# "tmux"
-		:-1read ~/.config/nvim/my-folds/vim-fold.vim | execute "normal! zoell" | startinsert
-	endif
-endfunction
-command! Fold :call Fold()
-
-
 " Printing - couple of settings are in options.lua
 function! Hardcopy()
 	:syntax off
