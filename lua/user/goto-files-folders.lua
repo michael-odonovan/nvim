@@ -2,6 +2,7 @@ vim.cmd([[
 
 " Repos
 command! Wiki cd ~/Repos/Wiki | :e index.md
+command! Todo cd ~/Repos/Wiki | :e todo.md
 command! Repos :e ~/Repos | :cd %:h
 command! Dotfiles :e ~/Repos/Dotfiles | :cd %:h
 command! GitPractise :e ~/Repos/GitPractise | :cd %:h
