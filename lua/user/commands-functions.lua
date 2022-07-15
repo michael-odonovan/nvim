@@ -19,7 +19,6 @@ function! Hardcopy()
 endfunction
 command! Hardcopy :call Hardcopy()
 
-
 " Clear all buffers that aren't open in a window
 function Wipeout()
     let tpbl=[]
